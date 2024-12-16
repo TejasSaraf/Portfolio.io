@@ -62,6 +62,45 @@ body {
   width: 80%;
 }
 
+.jioLogo,
+.eliteSoftwaresLogo,
+.gravitechDreamsLogo,
+.exposysLabsLogo{
+  width: 10%;
+  height: 10%;
+}
+
+.experience{
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  padding: 25px;
+  width: 80%;
+}
+
+.jio,
+.eliteSoftwares,
+.gravitechDreams,
+.exposysLabs {
+  display: flex;
+  margin: 20px;
+  gap: 30px;
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  padding: 25px;
+  width: 96%;
+}
+
+.jioDetails,
+.eliteDetails,
+.gravitechDetails,
+.exposysDetails{
+  display: flex;
+  flex-direction: column;
+}
+
 .aboutContainer {
   display: contents;
 }
