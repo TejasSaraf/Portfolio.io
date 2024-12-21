@@ -3,12 +3,13 @@ import { AnimatePresence } from "motion/react"
 import * as motion from "motion/react-client"
 import { useState } from "react"
 import { CSSProperties } from "react";
+import Image from 'next/image';
 
 const container: CSSProperties = {
   position: 'relative',
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'flex-start',
+  alignItems: 'flex-end',
   gap: '1rem',
   width: '100%'
 };
@@ -35,7 +36,10 @@ function Experience() {
       <h1>Experience</h1>
 
       <div className="jio">
-        <img className="jioLogo" src="/Reliance_Jio_Logo.png" alt="Jio Logo" />
+        <Image className="jioLogo" src="/Reliance_Jio_Logo.png" 
+        alt="Reliance Jio Logo" 
+        width={200} 
+        height={100} />
         <div className="jioDetails">
           <span>Software Developer</span>
           <span>Jio Platforms Limited</span>
@@ -74,7 +78,10 @@ function Experience() {
       </div>
 
       <div className="eliteSoftwares">
-        <img className="eliteSoftwaresLogo" src="/elitesoftwares.jpg" alt="Elite Softwares Logo" />
+        <Image className="eliteSoftwaresLogo" src="/elitesoftwares.jpg" 
+        alt="Elite Softwares Logo" 
+        width={200} 
+        height={100} />
         <div className="eliteDetails">
           <span>Web Developer Intern</span>
           <span>Elite Softwares</span>
@@ -107,7 +114,10 @@ function Experience() {
       </div>
 
       <div className="gravitechDreams">
-        <img className="gravitechDreamsLogo" src="/gravitechDreams.png" alt="Gravitech Dreams Logo" />
+        <Image className="gravitechDreamsLogo" src="/gravitechDreams.png" 
+        alt="Gravitech Dreams Logo" 
+        width={200} 
+        height={100} />
         <div className="gravitechDetails">
           <span>Software Engineer Intern</span>
           <span>Gravitech Dreams Pvt Ltd</span>
@@ -140,7 +150,10 @@ function Experience() {
       </div>
 
       <div className="exposysLabs">
-        <img className="exposysLabsLogo" src="/exposys.jpg" alt="Exposys Labs Logo" />
+        <Image className="exposysLabsLogo" src="/exposys.jpg" 
+        alt="Exposys Labs Logo" 
+        width={200} 
+        height={100} />
         <div className="exposysDetails">
           <span>Web Developer Intern</span>
           <span>Exposys Data Labs</span>
