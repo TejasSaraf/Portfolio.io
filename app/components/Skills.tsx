@@ -1,314 +1,164 @@
 "use client";
-import Image from 'next/image';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function Skills() {
+  const [activeSection, setActiveSection] = useState('languages');
   
+  const fadeInOut = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -20 },
+    transition: { duration: 0.3 }
+  };
+
+  const buttonVariants = {
+    active: { 
+      backgroundColor: 'hsl(265 83% 57%)',
+      color: 'white',
+      scale: 1.05,
+      borderRadius: '25px',
+      padding: '0px  10px'
+    },
+    inactive: { 
+      backgroundColor: '#E5E7EB',
+      color: 'black',
+      scale: 1,
+      border: '1px solid hsl(265 83% 57%)',
+      borderRadius: '25px',
+      padding: '0px  10px'
+    }
+  };
   
   return (
     <div className="skills">
-        <section>
-            <h1>Skills</h1>
-            <div className="skillsSection">
-                <button className="languages">languages</button>
-            <div className="technical">
-                <div className="competencies">
+      <section className='skillsSection'>
+        <h1 className="text-3xl font-bold">Skills</h1>
+        
+        <div className="flex">
+          {['languages', 'frontend', 'backend', 'tools'].map((section) => (
+            <motion.button
+              key={section}
+              onClick={() => setActiveSection(section)}
+              className="font-medium capitalize"
+              variants={buttonVariants}
+              animate={activeSection === section ? 'active' : 'inactive'}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {section}
+            </motion.button>
+          ))}
+        </div>
+
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeSection}
+            {...fadeInOut}
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-6"
+          >
+            {/* Languages Section */}
+            {activeSection === 'languages' && (
+              <>
+                {['Python', 'Java', 'Javascript', 'Typescript', 'HTML', 'CSS', 'C++'].map((skill) => (
+                  <motion.div
+                    key={skill}
+                    className="competencies hover:shadow-lg transition-shadow"
+                    whileHover={{ y: -5 }}
+                  >
                     <div className="logo">
-                    <Image className="pythonLogo" src="/python.png" 
-                            alt="Python Logo" 
-                            width={200} 
-                            height={100} />
+                      <img
+                        src={`/${skill.toLowerCase()}.png`}
+                        alt={`${skill} Logo`}
+                        className="object-contain"
+                      />
                     </div>
-                    <div>
-                    <span>Python</span>
-                    </div>
-                </div>
+                    <span className="font-medium">{skill}</span>
+                  </motion.div>
+                ))}
+              </>
+            )}
 
-                <div className="competencies">
+            {/* Frontend Section */}
+            {activeSection === 'frontend' && (
+              <>
+                {['Angular', 'react', 'next', 'html', 'css'].map((skill) => (
+                  <motion.div
+                    key={skill}
+                    className="competencies hover:shadow-lg transition-shadow"
+                    whileHover={{ y: -5 }}
+                  >
                     <div className="logo">
-                    <Image className="javaLogo" src="/java.png" 
-                            alt="Java Logo" 
-                            width={200} 
-                            height={100} />
+                      <img
+                        src={`/${skill}.png`}
+                        alt={`${skill} Logo`}
+                        className="object-contain"
+                      />
                     </div>
-                    <div>
-                    <span>Java</span>
-                    </div>
-                </div>
+                    <span className="font-medium">
+                      {skill.charAt(0).toUpperCase() + skill.slice(1)}
+                      {skill === 'react' && 'Js'}
+                      {skill === 'next' && 'Js'}
+                    </span>
+                  </motion.div>
+                ))}
+              </>
+            )}
 
-                <div className="competencies">
+            {/* Backend Section */}
+            {activeSection === 'backend' && (
+              <>
+                {['Mysql', 'mongodb', 'express', 'node'].map((skill) => (
+                  <motion.div
+                    key={skill}
+                    className="competencies hover:shadow-lg transition-shadow"
+                    whileHover={{ y: -5 }}
+                  >
                     <div className="logo">
-                    <Image className="javascriptLogo" src="/javascript.png" 
-                            alt="javascript Logo" 
-                            width={200} 
-                            height={100} />
+                      <img
+                        src={`/${skill}.png`}
+                        alt={`${skill} Logo`}
+                        className="object-contain"
+                      />
                     </div>
-                    <div>
-                    <span>Javascript</span>
-                    </div>
-                </div>
+                    <span className="font-medium">
+                      {skill === 'express' ? 'ExpressJs' : 
+                       skill === 'node' ? 'NodeJs' :
+                       skill.toUpperCase()}
+                    </span>
+                  </motion.div>
+                ))}
+              </>
+            )}
 
-                <div className="competencies">
+            {/* Tools Section */}
+            {activeSection === 'tools' && (
+              <>
+                {['aws', 'gcp', 'git', 'github', 'kubernetes', 'docker', 'postman'].map((skill) => (
+                  <motion.div
+                    key={skill}
+                    className="competencies hover:shadow-lg transition-shadow"
+                    whileHover={{ y: -5 }}
+                  >
                     <div className="logo">
-                    <Image className="typescriptLogo" src="/typescript.png" 
-                            alt="Typescript Logo" 
-                            width={200} 
-                            height={100} />
+                      <img
+                        src={`/${skill}${skill === 'postman' ? '.svg' : '.png'}`}
+                        alt={`${skill} Logo`}
+                        className="object-contain"
+                      />
                     </div>
-                    <div>
-                    <span>Typescript</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="htmlLogo" src="/html.png" 
-                            alt="Html Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>HTML</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="cssLogo" src="/css.png" 
-                            alt="CSS Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>CSS</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="cppLogo" src="/C++.png" 
-                            alt="C++ Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>C++</span>
-                    </div>
-                </div>
-            </div>
-            </div>
-
-            <div className="skillsSection">
-                <button className="languages">frontend</button>
-            <div className="technical">
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="pythonLogo" src="/Angular.png" 
-                            alt="Python Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>AngularJs</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="javaLogo" src="/react.png" 
-                            alt="Java Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>ReactJs</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="javascriptLogo" src="/next.png" 
-                            alt="javascript Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>NextJs</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="htmlLogo" src="/html.png" 
-                            alt="Html Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>HTML</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="cssLogo" src="/css.png" 
-                            alt="CSS Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>CSS</span>
-                    </div>
-                </div>
-
-            </div>
-            </div>
-
-            <div className="skillsSection">
-                <button className="languages">backend</button>
-            <div className="technical">
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="pythonLogo" src="/Mysql.png" 
-                            alt="Python Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>MYSQL</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="javaLogo" src="/mongodb.png" 
-                            alt="Java Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>MongoDB</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="javascriptLogo" src="/express.png" 
-                            alt="javascript Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>ExpressJs</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="typescriptLogo" src="/node.png" 
-                            alt="Typescript Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>NodeJs</span>
-                    </div>
-                </div>
-
-            </div>
-            </div>
-
-            <div className="skillsSection">
-                <button className="languages">tools</button>
-            <div className="technical">
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="pythonLogo" src="/aws.png" 
-                            alt="Python Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>AWS</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="javaLogo" src="/gcp.png" 
-                            alt="Java Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>GCP</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="javascriptLogo" src="/git.png" 
-                            alt="javascript Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>Git</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="typescriptLogo" src="/github.png" 
-                            alt="Typescript Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>Github</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="typescriptLogo" src="/kubernetes.png" 
-                            alt="Typescript Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>Kubernetes</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="typescriptLogo" src="/docker.png" 
-                            alt="Typescript Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>Docker</span>
-                    </div>
-                </div>
-
-                <div className="competencies">
-                    <div className="logo">
-                    <Image className="typescriptLogo" src="/postman.svg" 
-                            alt="Typescript Logo" 
-                            width={200} 
-                            height={100} />
-                    </div>
-                    <div>
-                    <span>Postman</span>
-                    </div>
-                </div>
-
-            </div>
-            </div>
-        </section>
-      
-      
+                    <span className="font-medium">
+                      {skill === 'aws' ? 'AWS' :
+                       skill === 'gcp' ? 'GCP' :
+                       skill.charAt(0).toUpperCase() + skill.slice(1)}
+                    </span>
+                  </motion.div>
+                ))}
+              </>
+            )}
+          </motion.div>
+        </AnimatePresence>
+      </section>
     </div>
   );
 }
