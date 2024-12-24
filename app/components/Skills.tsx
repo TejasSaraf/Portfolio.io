@@ -60,7 +60,7 @@ function Skills() {
             {/* Languages Section */}
             {activeSection === 'languages' && (
               <>
-                {['Python', 'Java', 'Javascript', 'Typescript', 'HTML', 'CSS', 'C++'].map((skill) => (
+                {['Python', 'Java', 'Javascript', 'Typescript', 'HTML', 'CSS', 'C++', 'C'].map((skill) => (
                   <motion.div
                     key={skill}
                     className="competencies hover:shadow-lg transition-shadow"
@@ -82,7 +82,7 @@ function Skills() {
             {/* Frontend Section */}
             {activeSection === 'frontend' && (
               <>
-                {['Angular', 'react', 'next', 'html', 'css'].map((skill) => (
+                {['Angular', 'react', 'next', 'html', 'css', 'bootstrap', 'framermotion', 'jQuery', 'ngrx', 'reactrouter', 'redux', 'rxjs', 'sass', 'tailwind', 'webpack'].map((skill) => (
                   <motion.div
                     key={skill}
                     className="competencies hover:shadow-lg transition-shadow"
@@ -108,7 +108,7 @@ function Skills() {
             {/* Backend Section */}
             {activeSection === 'backend' && (
               <>
-                {['Mysql', 'mongodb', 'express', 'node'].map((skill) => (
+                {['Mysql', 'mongodb', 'express', 'node', 'Firebase'].map((skill) => (
                   <motion.div
                     key={skill}
                     className="competencies hover:shadow-lg transition-shadow"
@@ -134,7 +134,7 @@ function Skills() {
             {/* Tools Section */}
             {activeSection === 'tools' && (
               <>
-                {['aws', 'gcp', 'git', 'github', 'kubernetes', 'docker', 'postman'].map((skill) => (
+                {['aws', 'gcp', 'git', 'github', 'kubernetes', 'docker', 'postman', 'NPM', 'JSON', 'GitHubActions', 'ESLint', 'openAI', 'Slack', 'Vercel', 'Vite'].map((skill) => (
                   <motion.div
                     key={skill}
                     className="competencies hover:shadow-lg transition-shadow"
