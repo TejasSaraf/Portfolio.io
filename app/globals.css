@@ -63,6 +63,17 @@ body {
   font-size: 20px;
 }
 
+.projects {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  border-radius: 20px;
+  padding: 25px;
+  width: 80%;
+  font-size: 20px;
+}
+
 .jioLogo,
 .eliteSoftwaresLogo,
 .gravitechDreamsLogo,
@@ -174,5 +185,35 @@ h1 {
 }
 
 .skillsSection{
+  gap: 10px;
+}
+
+.projectSkills{
+  display: flex;
+  gap: 10px;
+}
+
+.Map{
+  display: flex;
+  width: 50%;
+  gap: 5px;
+}
+
+.skillsLogo{
+  width: 25px;
+}
+
+.projectsSection{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.projects{
+  gap: 20px;
+}
+
+.link{
+  display: flex;
   gap: 10px;
 }
