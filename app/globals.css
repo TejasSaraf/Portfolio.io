@@ -24,6 +24,32 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 4rem; /* Add padding to account for fixed navbar */
+}
+
+.paint {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Scroll progress bar styles */
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #3b82f6;
+  transform-origin: 0%;
 }
 
 .bg-gray-800 {
@@ -152,6 +178,10 @@ h1 {
     border-radius: 13px;
     align-items: center;
     justify-content: center;
+}
+
+.navbar{
+  background: rgb(229, 231, 235);
 }
 
 .competencies{

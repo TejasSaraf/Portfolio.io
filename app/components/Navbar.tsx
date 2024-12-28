@@ -1,102 +1,161 @@
 "use client";
 
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import { motion, useScroll } from 'framer-motion';
+
 function Navbar() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+    const { scrollYProgress } = useScroll();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            if (scrollPosition > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <nav className="bg-gray-800">
+        <nav className={`navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         {/* Mobile menu button */}
                         <button
                             type="button"
-                            className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            className={`relative inline-flex items-center justify-center rounded-md p-2 ${isScrolled ? 'text-gray-400 hover:bg-gray-100 hover:text-gray-500' : 'text-white hover:bg-gray-700 hover:text-white'} focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white`}
                             aria-controls="mobile-menu"
-                            aria-expanded="false"
+                            aria-expanded={isMobileMenuOpen}
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
                             <span className="absolute -inset-0.5"></span>
                             <span className="sr-only">Open main menu</span>
-                            <svg
-                                className="block size-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth="1.5"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                                />
-                            </svg>
-                            <svg
-                                className="hidden size-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                strokeWidth="1.5"
-                                stroke="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    d="M6 18 18 6M6 6l12 12"
-                                />
-                            </svg>
+                            {isMobileMenuOpen ? (
+                                <svg
+                                    className="block h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M6 18 18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            ) : (
+                                <svg
+                                    className="block h-6 w-6"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                    />
+                                </svg>
+                            )}
                         </button>
                     </div>
-                    <div className="flex flex-1 gap-10 items-center justify-center sm:items-stretch sm:justify-start">
-                        <div className="flex shrink-0 items-center">
-                            <img
+                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div className="flex flex-shrink-0 items-center">
+                            <Image
                                 className="h-8 w-auto"
                                 src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
                                 alt="Your Company"
+                                width={32}
+                                height={32}
                             />
                         </div>
-                        <div className="container">
-                            <div className="relative flex flex-wrap items-stretch items-center flex">
-                                <input
-                                    type="search"
-                                    className="relative m-0 block flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-                                    placeholder="Search"
-                                    aria-label="Search"
-                                    aria-describedby="button-addon2"
-                                />
-
-                                {/* <!--Search icon--> */}
-                                <span
-                                    className="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 dark:text-neutral-200"
-                                    id="basic-addon2"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                        className="h-5 w-5"
-                                    >
-                                        <path
-                                            fillRule="evenodd"
-                                            d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                                            clipRule="evenodd"
+                        <div className="hidden sm:ml-6 sm:block w-full max-w-xl">
+                            <div className="flex items-center">
+                                <div className="relative flex flex-1 items-stretch">
+                                    <div className="relative w-full">
+                                        <input
+                                            type="search"
+                                            className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors duration-300"
+                                            placeholder="Search"
+                                            aria-label="Search"
                                         />
-                                    </svg>
-                                </span>
+                                        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                            <svg
+                                                className="h-5 w-5 text-gray-400"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20"
+                                                fill="currentColor"
+                                                aria-hidden="true"
+                                            >
+                                                <path
+                                                    fillRule="evenodd"
+                                                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                                    clipRule="evenodd"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <button className="paint">
-                                <img src="/paint-palette.png" alt="Paint Palette" />
-                            </button>
                         </div>
                     </div>
-                    <div className="hidden sm:ml-6 sm:block"></div>
-                    <div className="mb-3 xl:w-96"></div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <div className="relative ml-3"></div>
+                        <button className={`paint p-1 rounded-full ${isScrolled ? 'text-gray-400 hover:text-gray-500' : 'text-gray-300 hover:text-white'} focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors duration-300`}>
+                            <Image src="/paint-palette.png" alt="Paint Palette" width={25} height={25} />
+                        </button>
                     </div>
                 </div>
             </div>
-            <div className="sm:hidden" id="mobile-menu"></div>
+
+            {/* Mobile menu, show/hide based on menu state */}
+            <div className={`sm:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
+                <div className="space-y-1 px-2 pb-3 pt-2">
+                    <div className="relative">
+                        <input
+                            type="search"
+                            className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors duration-300"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg
+                                className="h-5 w-5 text-gray-400"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fillRule="evenodd"
+                                    d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+                                    clipRule="evenodd"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Scroll progress bar */}
+            <motion.div
+                className="progress-bar"
+                style={{ scaleX: scrollYProgress }}
+            />
         </nav>
     );
 }
 
 export default Navbar;
+
