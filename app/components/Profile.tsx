@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from 'framer-motion';
+
 function Profile() {
   return (
     <div className="profile">
@@ -15,25 +17,44 @@ function Profile() {
           />
         </div>
         <span className="text font-medium text-lg">Tejas Saraf</span>
-        <span className="block text-gray-500">Software Developer</span>
+        <span className="block text-gray-500">Software Developer | Ex - Jio Platforms</span>
         <span className="block text-gray-500">Chicago, IL, United States</span>
-        <button
-          className="button flex items-center gap-2 border border-primary px-2 py-1 rounded-2xl font-thin hover:underline border"
+        <motion.button
+          className="button flex items-center gap-2 border border-primary px-2 py-1 rounded-2xl font-thin hover:underline"
           type="button"
           aria-haspopup="dialog"
           aria-expanded="false"
           aria-controls="radix-:rc:"
           data-state="closed"
+          animate={{
+            scale: [1, 1.05, 1],
+            transition: {
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+            },
+          }}
         >
-          <span className="relative flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green opacity-100"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-green"></span>
-          </span>
+          <motion.span 
+            className="relative flex h-3 w-3"
+            animate={{
+              scale: [1, 1.2, 1],
+              transition: {
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            }}
+          >
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+          </motion.span>
           Open for work
-        </button>
+        </motion.button>
       </a>
     </div>
   );
 }
 
 export default Profile;
+
