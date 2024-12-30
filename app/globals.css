@@ -17,7 +17,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main {
@@ -53,7 +52,7 @@ body {
 }
 
 .bg-gray-800 {
-  background-color: #e5e7eb;
+  background-color: #f5f5f7;
   width: 100%;
 }
 
@@ -72,9 +71,10 @@ body {
   align-items: center;
   margin: 20px;
   flex-direction: column;
-  background-color: #e5e7eb;
+  background-color: #f5f5f7;
   border-radius: 20px;
   padding: 25px;
+  gap:20px;
   width: 80%;
 }
 
@@ -82,7 +82,7 @@ body {
   display: flex;
   margin: 20px;
   flex-direction: column;
-  background-color: #e5e7eb;
+  background-color: #f5f5f7;
   border-radius: 20px;
   padding: 25px;
   width: 80%;
@@ -93,7 +93,7 @@ body {
   display: flex;
   margin: 20px;
   flex-direction: column;
-  background-color: #e5e7eb;
+  background-color: #f5f5f7;
   border-radius: 20px;
   padding: 25px;
   width: 80%;
@@ -112,7 +112,7 @@ body {
   display: flex;
   margin: 20px;
   flex-direction: column;
-  background-color: #e5e7eb;
+  background-color: #f5f5f7;
   border-radius: 20px;
   padding: 25px;
   width: 80%;
@@ -122,7 +122,7 @@ body {
   display: flex;
   margin: 20px;
   flex-direction: column;
-  background-color: #e5e7eb;
+  background-color: #f5f5f7;
   border-radius: 20px;
   padding: 25px;
   width: 80%;
@@ -135,7 +135,7 @@ body {
   display: flex;
   margin: 20px;
   gap: 30px;
-  background-color: #e5e7eb;
+  background-color: #f5f5f7;
   border-radius: 20px;
   padding: 25px;
   width: 90%;
@@ -164,6 +164,7 @@ body {
   border-width: 1px;
   will-change: transform;
   transform: scale(0.911692);
+  line-height: 2.16667;
 }
 
 h1 {
@@ -181,7 +182,39 @@ h1 {
 }
 
 .navbar{
-  background: rgb(229, 231, 235);
+  background: #f5f5f7;
+  width: 100%;
+  height: 64px;
+}
+
+.profilePicture{
+  width: 15rem;
+  height: 15rem;
+}
+
+.profileContent{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+}
+
+.name{
+  display:flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.title{
+  font-size: 42px;
+  letter-spacing: .009em;
+  font-weight: 500;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.designation,
+.location{
+  font-size: 20px;
 }
 
 .competencies{
@@ -209,10 +242,21 @@ h1 {
   gap: 12px;
 }
 
-.flex{
+.openForWorkButton{
   gap: 10px;
-  font-size: 1rem;
-  border-radius: 30px;
+  font-size: 17px;
+  line-height: 1.17648;
+  padding: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 980px;
+  letter-spacing: -.022em;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  pointer-events: all;
+  font-weight: 400;
+  background-color: rgba(0,0,0,0);
+  --sk-button-margin-horizontal: 14px;
+  --sk-button-margin-vertical: 14px;
 }
 
 .skillsSection{
