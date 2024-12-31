@@ -2,12 +2,10 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { motion, useScroll } from 'framer-motion';
 
 function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const { scrollYProgress } = useScroll();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,8 +23,8 @@ function Navbar() {
 
     return (
         <nav className={`navbar fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div className="relative flex h-16 items-center justify-between">
+            <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
+                <div className="navContents relative flex items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         {/* Mobile menu button */}
                         <button
@@ -72,13 +70,13 @@ function Navbar() {
                         </button>
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                        <div className="flex flex-shrink-0 items-center">
+                        <div className="NavLogo flex flex-shrink-0 items-center">
                             <Image
                                 className="h-8 w-auto"
-                                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                                src="/T.png"
                                 alt="Your Company"
-                                width={32}
-                                height={32}
+                                width={38}
+                                height={38}
                             />
                         </div>
                         <div className="hidden sm:ml-6 sm:block w-full max-w-xl">
@@ -148,11 +146,6 @@ function Navbar() {
                 </div>
             </div>
 
-            {/* Scroll progress bar */}
-            <motion.div
-                className="progress-bar"
-                style={{ scaleX: scrollYProgress }}
-            />
         </nav>
     );
 }
