@@ -1,7 +1,6 @@
 "use client";
-import { AnimatePresence } from "motion/react"
-import * as motion from "motion/react-client"
-import { useState } from "react"
+import { AnimatePresence, motion } from 'framer-motion';
+import { useState } from "react";
 import { CSSProperties } from "react";
 import Image from 'next/image';
 

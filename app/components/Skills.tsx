@@ -35,7 +35,7 @@ function Skills() {
       <section className='skillsSection'>
         <h1 className="text-3xl font-bold">Skills</h1>
         
-        <div className="flex">
+        <div className="categories">
           {['languages', 'frontend', 'backend', 'tools'].map((section) => (
             <motion.button
               key={section}
