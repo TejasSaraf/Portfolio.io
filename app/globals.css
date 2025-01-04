@@ -89,6 +89,33 @@ body {
   font-size: 20px;
 }
 
+.aboutTitle{
+  display: flex;
+      align-items: center;
+      gap: 8px;
+  
+}
+
+.aboutCategories{
+  display: flex;
+      gap: 10px;
+      padding: 8px 0px 20px 30px;  
+}
+
+.everyoneContent, 
+.recruiterContent{
+  display: flex;
+  padding: 0px 0px 0px 30px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.experienceLogo{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .projects {
   display: flex;
   margin: 20px;
