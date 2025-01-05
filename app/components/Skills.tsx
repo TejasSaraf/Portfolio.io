@@ -33,10 +33,13 @@ function Skills() {
   return (
     <div className="skills">
       <section className='skillsSection'>
+        <div className="skillsTitle">
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 -960 960 960"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"></path></svg>
         <h1 className="text-3xl font-bold">Skills</h1>
+        </div>
         
         <div className="categories">
-          {['languages', 'frontend', 'backend', 'tools'].map((section) => (
+          {['current', 'languages', 'frontend', 'backend', 'tools'].map((section) => (
             <motion.button
               key={section}
               onClick={() => setActiveSection(section)}
@@ -55,8 +58,30 @@ function Skills() {
           <motion.div
             key={activeSection}
             {...fadeInOut}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-6"
+            className="skillsContainer"
           >
+            {/* Languages Section */}
+            {activeSection === 'current' && (
+              <>
+                {['Angular', 'react', 'next', 'Node', 'AWS', 'GCP', 'ngrx', 'reactrouter', 'rxjs', 'redux', 'mysql', 'express', 'git', 'github', 'docker', 'Python', 'Java', 'Javascript', 'Typescript', 'HTML', 'CSS', 'C++', 'C', 'Spring'].map((skill) => (
+                  <motion.div
+                    key={skill}
+                    className="competencies hover:shadow-lg transition-shadow"
+                    whileHover={{ y: -5 }}
+                  >
+                    <div className="logo">
+                      <img
+                        src={`/${skill.toLowerCase()}.png`}
+                        alt={`${skill} Logo`}
+                        className="object-contain"
+                      />
+                    </div>
+                    <span className="font-medium">{skill}</span>
+                  </motion.div>
+                ))}
+              </>
+            )}
+
             {/* Languages Section */}
             {activeSection === 'languages' && (
               <>

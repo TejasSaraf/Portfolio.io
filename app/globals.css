@@ -116,6 +116,12 @@ body {
   gap: 8px;
 }
 
+.skillsTitle{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .projects {
   display: flex;
   margin: 20px;
@@ -181,6 +187,15 @@ body {
 .categories{
   display: flex;
   gap: 5px;
+  padding: 0px 0px 0px 30px;
+}
+
+.skillsContainer{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: stretch;
+ gap: .5rem;
+ padding: 0px 0px 0px 30px;
 }
 
 .aboutContainer {
