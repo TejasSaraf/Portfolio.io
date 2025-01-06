@@ -7,14 +7,19 @@ import { RiNetflixFill } from "react-icons/ri";
 function Projects() {
     return(
         <div className="projects">
+            <div className="projectsTitle">
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 -960 960 960"><path d="M120-440v-320q0-33 23.5-56.5T200-840h240v400H120Zm240-80Zm160-320h240q33 0 56.5 23.5T840-760v160H520v-240Zm0 720v-400h320v320q0 33-23.5 56.5T760-120H520ZM120-360h320v240H200q-33 0-56.5-23.5T120-200v-160Zm240 80Zm240-400Zm0 240Zm-400-80h160v-240H200v240Zm400-160h160v-80H600v80Zm0 240v240h160v-240H600ZM200-280v80h160v-80H200Z"></path></svg>
             <h1 className="text-3xl font-bold">Projects</h1>
+            </div>
             <div className="projectsSection">
             <div className="Map">
-                <div className="icon">
-                <FaMap />
+                <div className="mapIcon">
+                <img className="Logo" src="/map.png"></img>
                 </div>
                 <div className="projectTitle">
+                    <div className="projectHeading">
                     <span>Illinois Tech Campus Map</span>
+                    </div>
                     <div className="link">
                         <a href="https://github.com/TejasSaraf/Illinois-Tech-Campus-Map">
                         <img className="skillsLogo" src="/github.png"></img>
@@ -34,11 +39,13 @@ function Projects() {
             </div>
 
             <div className="Map">
-                <div className="icon">
-                <BiSolidMoviePlay />
+                <div className="movieIcon">
+                <img className="Logo" src="/movie.png"></img>
                 </div>
                 <div className="projectTitle">
+                    <div className="projectHeading">
                     <span>Movies Flix</span>
+                    </div>
                     <div className="link">
                         <a href="https://github.com/TejasSaraf/Movie-Booking-System">
                         <img className="skillsLogo" src="/github.png"></img>
@@ -55,11 +62,13 @@ function Projects() {
 
             <div className="projectsSection">
             <div className="Map">
-                <div className="icon">
-                <SiHiveBlockchain />
+                <div className="ecommerceIcon">
+                <img className="Logo" src="/online-shop.png"></img>
                 </div>
                 <div className="projectTitle">
+                    <div className="projectHeading">
                     <span>Blockchain-E-Commerce</span>
+                    </div>  
                     <div className="link">
                         <a href="https://github.com/TejasSaraf/Blockchain-E-Commerce">
                         <img className="skillsLogo" src="/github.png"></img>
@@ -77,11 +86,13 @@ function Projects() {
             </div>
 
             <div className="Map">
-                <div className="icon">
-                <RiNetflixFill />
+                <div className="netflixIcon">
+                <img className="Logo" src="/netflix.png"></img>
                 </div>
                 <div className="projectTitle">
+                    <div className="projectHeading">
                     <span>Netflix Clone</span>
+                    </div>
                     <div className="link">
                         <a href="https://github.com/TejasSaraf/Netflix-Clone">
                         <img className="skillsLogo" src="/github.png"></img>

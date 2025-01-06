@@ -43,7 +43,7 @@ function Skills() {
             <motion.button
               key={section}
               onClick={() => setActiveSection(section)}
-              className="font-medium capitalize"
+              className="skillsButton capitalize"
               variants={buttonVariants}
               animate={activeSection === section ? 'active' : 'inactive'}
               whileHover={{ scale: 1.05 }}
@@ -76,7 +76,7 @@ function Skills() {
                         className="object-contain"
                       />
                     </div>
-                    <span className="font-medium">{skill}</span>
+                    <span className="skillsList">{skill}</span>
                   </motion.div>
                 ))}
               </>
@@ -98,7 +98,7 @@ function Skills() {
                         className="object-contain"
                       />
                     </div>
-                    <span className="font-medium">{skill}</span>
+                    <span className="skillsList">{skill}</span>
                   </motion.div>
                 ))}
               </>
@@ -120,7 +120,7 @@ function Skills() {
                         className="object-contain"
                       />
                     </div>
-                    <span className="font-medium">
+                    <span className="skillsList">
                       {skill.charAt(0).toUpperCase() + skill.slice(1)}
                       {skill === 'react' && 'Js'}
                       {skill === 'next' && 'Js'}
@@ -146,7 +146,7 @@ function Skills() {
                         className="object-contain"
                       />
                     </div>
-                    <span className="font-medium">
+                    <span className="skillsList">
                       {skill === 'express' ? 'ExpressJs' : 
                        skill === 'node' ? 'NodeJs' :
                        skill.toUpperCase()}

@@ -43,18 +43,10 @@ function Experience() {
         width={200} 
         height={100} />
         <div className="jioDetails">
-          <span>Software Developer</span>
+          <h2>Software Developer</h2>
           <span>Jio Platforms Limited</span>
           <span>Oct 2023 - July 2024</span>
           <span>Mumbai, India</span>
-          <div style={container}>
-            <motion.button
-              style={button}
-              onClick={() => setVisibleSections(prev => ({ ...prev, jio: !prev.jio }))}
-              whileTap={{ y: 1 }}
-            >
-              {visibleSections.jio ? "Hide Details" : "Show Details"}
-            </motion.button>
             <AnimatePresence>
               {visibleSections.jio && (
                 <motion.div
@@ -64,39 +56,39 @@ function Experience() {
                   exit={{ opacity: 0, height: 0 }}
                   style={{ overflow: 'hidden' }}
                 >
-                  <span>Developed a Resizing feature for camera feed on Immersive Screen Share using AngularJS and Typescript, integrating Agora RESTful service API and WebRTC API; optimized API calls with 5.5s query intervals.</span><br></br>
-                  <span>Revamped JioEvents&apos; New Host UI by resolving 50+ critical observations, significantly enhance the experience.</span><br></br>
-                  <span>Enabled drag-resize on camera feeds with ngx-drag-resize library, improving host background visibility by 99.9%.</span><br></br>
-                  <span>Streamlined OTP verification with unifying email/phone fields, dynamically updating API payloads for a seamless user experience for over 10,000+ customers.</span><br></br>
-                  <span>Contributed to front-end feature development, CI/CD pipeline setup, and application deployment on GCP (Google Cloud Platform), achieving 80% live event success rates.</span><br></br>
-                  <span>Delivered dynamic components using Angular Routes, NgModule, RxJS, Reactive Forms, Observables, and Services.</span><br></br>
-                  <span>Integrated IFrame for Host Control, enabling attendee-side rendering with real-time event previews.</span><br></br>
-                  <span>Maintained frontend performance by 5% by resolving 20 cross browser production bugs through effective debugging.</span><br></br>
+                  <li>Developed a Resizing feature for camera feed on Immersive Screen Share using AngularJS and Typescript, integrating Agora RESTful service API and WebRTC API; optimized API calls with 5.5s query intervals.</li>
+                  <li>Revamped JioEvents&apos; New Host UI by resolving 50+ critical observations, significantly enhance the experience.</li>
+                  <li>Enabled drag-resize on camera feeds with ngx-drag-resize library, improving host background visibility by 99.9%.</li>
+                  <li>Streamlined OTP verification with unifying email/phone fields, dynamically updating API payloads for a seamless user experience for over 10,000+ customers.</li>
+                  <li>Contributed to front-end feature development, CI/CD pipeline setup, and application deployment on GCP (Google Cloud Platform), achieving 80% live event success rates.</li>
+                  <li>Delivered dynamic components using Angular Routes, NgModule, RxJS, Reactive Forms, Observables, and Services.</li>
+                  <li>Integrated IFrame for Host Control, enabling attendee-side rendering with real-time event previews.</li>
+                  <li>Maintained frontend performance by 5% by resolving 20 cross browser production bugs through effective debugging.</li>
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+            <div className='details'>
+            <motion.button
+              style={button}
+              onClick={() => setVisibleSections(prev => ({ ...prev, jio: !prev.jio }))}
+              whileTap={{ y: 1 }}
+            >
+              {visibleSections.jio ? "Hide Details" : "Show Details"}
+            </motion.button>
+            </div>
         </div>
       </div>
 
       <div className="eliteSoftwares">
-        <Image className="eliteSoftwaresLogo" src="/elitesoftwares.jpg" 
+        <Image className="eliteSoftwaresLogo" src="/elitesoftwares.png" 
         alt="Elite Softwares Logo" 
         width={200} 
         height={100} />
         <div className="eliteDetails">
-          <span>Web Developer Intern</span>
+          <h2>Web Developer Intern</h2>
           <span>Elite Softwares</span>
           <span>Jan 2023 - Nov 2023</span>
           <span>Pune, India</span>
-          <div style={container}>
-            <motion.button
-              style={button}
-              onClick={() => setVisibleSections(prev => ({ ...prev, elite: !prev.elite }))}
-              whileTap={{ y: 1 }}
-            >
-              {visibleSections.elite ? "Hide Details" : "Show Details"}
-            </motion.button>
             <AnimatePresence>
               {visibleSections.elite && (
                 <motion.div
@@ -106,12 +98,20 @@ function Experience() {
                   exit={{ opacity: 0, height: 0 }}
                   style={{ overflow: 'hidden' }}
                 >
-                  <span>Designed College ERP features for faculty, enabling profile updates and improving usability and control.</span>
-                  <span>Boosted feature efficiency by 25% by building &quot;create task&quot; and &quot;mark attendance&quot; functions with ReactJS & Redux</span>
+                  <li>Designed College ERP features for faculty, enabling profile updates and improving usability and control.</li>
+                  <li>Boosted feature efficiency by 25% by building &quot;create task&quot; and &quot;mark attendance&quot; functions with ReactJS & Redux</li>
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+            <div className='details'>
+            <motion.button
+              style={button}
+              onClick={() => setVisibleSections(prev => ({ ...prev, elite: !prev.elite }))}
+              whileTap={{ y: 1 }}
+            >
+              {visibleSections.elite ? "Hide Details" : "Show Details"}
+            </motion.button>
+            </div>
         </div>
       </div>
 
@@ -121,18 +121,10 @@ function Experience() {
         width={200} 
         height={100} />
         <div className="gravitechDetails">
-          <span>Software Engineer Intern</span>
+          <h2>Software Engineer Intern</h2>
           <span>Gravitech Dreams Pvt Ltd</span>
           <span>Jan 2023 - June 2023</span>
           <span>Pune, India</span>
-          <div style={container}>
-            <motion.button
-              style={button}
-              onClick={() => setVisibleSections(prev => ({ ...prev, gravitech: !prev.gravitech }))}
-              whileTap={{ y: 1 }}
-            >
-              {visibleSections.gravitech ? "Hide Details" : "Show Details"}
-            </motion.button>
             <AnimatePresence>
               {visibleSections.gravitech && (
                 <motion.div
@@ -142,12 +134,20 @@ function Experience() {
                   exit={{ opacity: 0, height: 0 }}
                   style={{ overflow: 'hidden' }}
                 >
-                  <span>Enhanced a social media handler app with NodeJS, JavaScript, & MySQL, improving user engagement significantly.</span>
-                  <span>Automated post scheduling for 5 platforms while ensuring SDLC compliance for reliable performance.</span>
+                  <li>Enhanced a social media handler app with NodeJS, JavaScript, & MySQL, improving user engagement significantly.</li>
+                  <li>Automated post scheduling for 5 platforms while ensuring SDLC compliance for reliable performance.</li>
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+            <div className='details'>
+            <motion.button
+              style={button}
+              onClick={() => setVisibleSections(prev => ({ ...prev, gravitech: !prev.gravitech }))}
+              whileTap={{ y: 1 }}
+            >
+              {visibleSections.gravitech ? "Hide Details" : "Show Details"}
+            </motion.button>
+            </div>
         </div>
       </div>
 
@@ -157,18 +157,10 @@ function Experience() {
         width={200} 
         height={100} />
         <div className="exposysDetails">
-          <span>Web Developer Intern</span>
+          <h2>Web Developer Intern</h2>
           <span>Exposys Data Labs</span>
           <span>Dec 2021 - Jan 2022</span>
           <span>Remote</span>
-          <div style={container}>
-            <motion.button
-              style={button}
-              onClick={() => setVisibleSections(prev => ({ ...prev, exposys: !prev.exposys }))}
-              whileTap={{ y: 1 }}
-            >
-              {visibleSections.exposys ? "Hide Details" : "Show Details"}
-            </motion.button>
             <AnimatePresence>
               {visibleSections.exposys && (
                 <motion.div
@@ -178,12 +170,20 @@ function Experience() {
                   exit={{ opacity: 0, height: 0 }}
                   style={{ overflow: 'hidden' }}
                 >
-                  <span>Built a responsive blogging website with CRUD for admin users using Python, tripling page views for the platform.</span>
-                  <span>Developed content management features, empowering users to create and customize blogs effortlessly.</span>
+                  <li>Built a responsive blogging website with CRUD for admin users using Python, tripling page views for the platform.</li>
+                  <li>Developed content management features, empowering users to create and customize blogs effortlessly.</li>
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+            <div className='details'>
+            <motion.button
+              style={button}
+              onClick={() => setVisibleSections(prev => ({ ...prev, exposys: !prev.exposys }))}
+              whileTap={{ y: 1 }}
+            >
+              {visibleSections.exposys ? "Hide Details" : "Show Details"}
+            </motion.button>
+            </div>
         </div>
       </div>
     </div>
