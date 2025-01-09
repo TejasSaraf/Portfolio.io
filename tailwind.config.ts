@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customPurple: 'rgb(130, 54, 236)',
+        background3: 'hsl(0 0% 90%)',
       },
       fontFamily: {
         sans: [

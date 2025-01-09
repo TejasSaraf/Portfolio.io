@@ -31,7 +31,7 @@ function About() {
   };
 
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="aboutTitle">
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 -960 960 960">
           <path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path>
@@ -45,7 +45,7 @@ function About() {
             <motion.button
               key={section}
               onClick={() => setActiveSection(section)}
-              className="font-medium capitalize"
+              className="aboutButtons capitalize"
               variants={buttonVariants}
               animate={activeSection === section ? "active" : "inactive"}
               whileHover={{ scale: 1.05 }}
@@ -79,16 +79,16 @@ function About() {
                     Technology and Management at Illinois Institute of
                     Technology, I bring over a year of professional experience
                     in diverse roles within established organizations like Jio
-                    Platforms Limited, where I led impactful projects
-                    improving and streamlining frontend features.
+                    Platforms Limited, where I led impactful projects improving
+                    and streamlining frontend features.
                   </motion.span>
                   <motion.span layout>
                     I thrive in collaborative, agile environments and am
                     constantly motivated by challenges that allow me to
                     innovate. I'm also proud to hold a patent in quantum
                     computing, contributing to advancements in qubit-based
-                    processing for transformative industries like AI and
-                    Quantum Computing.
+                    processing for transformative industries like AI and Quantum
+                    Computing.
                   </motion.span>
                   <motion.span layout>
                     Key skills include Java, JavaScript, Angular, React, and
@@ -97,8 +97,8 @@ function About() {
                     development, Front-End development, backend services, and
                     integrating REST APIs to drive results. I look forward to
                     connecting with others in the industry, exploring
-                    collaboration opportunities, or discussing roles where I
-                    can make a meaningful impact.
+                    collaboration opportunities, or discussing roles where I can
+                    make a meaningful impact.
                   </motion.span>
                   <motion.span layout>
                     Let's connect—reach out if you're looking for a tech-driven
@@ -123,16 +123,16 @@ function About() {
                     Technology and Management at Illinois Institute of
                     Technology, I bring over a year of professional experience
                     in diverse roles within established organizations like Jio
-                    Platforms Limited, where I led impactful projects
-                    improving and streamlining frontend features.
+                    Platforms Limited, where I led impactful projects improving
+                    and streamlining frontend features.
                   </motion.span>
                   <motion.span layout>
                     I thrive in collaborative, agile environments and am
                     constantly motivated by challenges that allow me to
                     innovate. I'm also proud to hold a patent in quantum
                     computing, contributing to advancements in qubit-based
-                    processing for transformative industries like AI and
-                    Quantum Computing.
+                    processing for transformative industries like AI and Quantum
+                    Computing.
                   </motion.span>
                 </div>
               </motion.div>
@@ -145,4 +145,3 @@ function About() {
 }
 
 export default About;
-

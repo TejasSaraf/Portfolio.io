@@ -1,57 +1,61 @@
 "use client";
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Skills() {
-  const [activeSection, setActiveSection] = useState('languages');
-  
+  const [activeSection, setActiveSection] = useState("current");
+
   const fadeInOut = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: -20 },
-    transition: { duration: 0.3 }
+    transition: { duration: 0.3 },
   };
 
   const buttonVariants = {
-    active: { 
-      backgroundColor: 'hsl(265 83% 57%)',
-      color: 'white',
+    active: {
+      backgroundColor: "hsl(265 83% 57%)",
+      color: "white",
       scale: 1.05,
-      borderRadius: '25px',
-      padding: '0px  10px'
+      borderRadius: "25px",
+      padding: "0px  10px",
     },
-    inactive: { 
-      backgroundColor: '#E5E7EB',
-      color: 'black',
+    inactive: {
+      backgroundColor: "#E5E7EB",
+      color: "black",
       scale: 1,
-      border: '1px solid hsl(265 83% 57%)',
-      borderRadius: '25px',
-      padding: '0px  10px'
-    }
+      border: "1px solid hsl(265 83% 57%)",
+      borderRadius: "25px",
+      padding: "0px  10px",
+    },
   };
-  
+
   return (
-    <div className="skills">
-      <section className='skillsSection'>
+    <div id="skills" className="skills">
+      <section className="skillsSection">
         <div className="skillsTitle">
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 -960 960 960"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"></path></svg>
-        <h1 className="text-3xl font-bold">Skills</h1>
+          <svg className="w-6 h-6" fill="currentColor" viewBox="0 -960 960 960">
+            <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"></path>
+          </svg>
+          <h1 className="text-3xl font-bold">Skills</h1>
         </div>
-        
+
         <div className="categories">
-          {['current', 'languages', 'frontend', 'backend', 'tools'].map((section) => (
-            <motion.button
-              key={section}
-              onClick={() => setActiveSection(section)}
-              className="skillsButton capitalize"
-              variants={buttonVariants}
-              animate={activeSection === section ? 'active' : 'inactive'}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {section}
-            </motion.button>
-          ))}
+          {["current", "languages", "frontend", "backend", "tools"].map(
+            (section) => (
+              <motion.button
+                key={section}
+                onClick={() => setActiveSection(section)}
+                className="skillsButton capitalize"
+                variants={buttonVariants}
+                animate={activeSection === section ? "active" : "inactive"}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {section}
+              </motion.button>
+            )
+          )}
         </div>
 
         <AnimatePresence mode="wait">
@@ -61,9 +65,34 @@ function Skills() {
             className="skillsContainer"
           >
             {/* Languages Section */}
-            {activeSection === 'current' && (
+            {activeSection === "current" && (
               <>
-                {['Angular', 'react', 'next', 'Node', 'AWS', 'GCP', 'ngrx', 'reactrouter', 'rxjs', 'redux', 'mysql', 'express', 'git', 'github', 'docker', 'Python', 'Java', 'Javascript', 'Typescript', 'HTML', 'CSS', 'C++', 'C', 'Spring'].map((skill) => (
+                {[
+                  "Angular",
+                  "react",
+                  "next",
+                  "Node",
+                  "AWS",
+                  "GCP",
+                  "ngrx",
+                  "reactrouter",
+                  "rxjs",
+                  "redux",
+                  "mysql",
+                  "express",
+                  "git",
+                  "github",
+                  "docker",
+                  "Python",
+                  "Java",
+                  "Javascript",
+                  "Typescript",
+                  "HTML",
+                  "CSS",
+                  "C++",
+                  "C",
+                  "Spring",
+                ].map((skill) => (
                   <motion.div
                     key={skill}
                     className="competencies hover:shadow-lg transition-shadow"
@@ -83,9 +112,18 @@ function Skills() {
             )}
 
             {/* Languages Section */}
-            {activeSection === 'languages' && (
+            {activeSection === "languages" && (
               <>
-                {['Python', 'Java', 'Javascript', 'Typescript', 'HTML', 'CSS', 'C++', 'C'].map((skill) => (
+                {[
+                  "Python",
+                  "Java",
+                  "Javascript",
+                  "Typescript",
+                  "HTML",
+                  "CSS",
+                  "C++",
+                  "C",
+                ].map((skill) => (
                   <motion.div
                     key={skill}
                     className="competencies hover:shadow-lg transition-shadow"
@@ -105,9 +143,25 @@ function Skills() {
             )}
 
             {/* Frontend Section */}
-            {activeSection === 'frontend' && (
+            {activeSection === "frontend" && (
               <>
-                {['Angular', 'react', 'next', 'html', 'css', 'bootstrap', 'framermotion', 'jQuery', 'ngrx', 'reactrouter', 'redux', 'rxjs', 'sass', 'tailwind', 'webpack'].map((skill) => (
+                {[
+                  "Angular",
+                  "react",
+                  "next",
+                  "html",
+                  "css",
+                  "bootstrap",
+                  "framermotion",
+                  "jQuery",
+                  "ngrx",
+                  "reactrouter",
+                  "redux",
+                  "rxjs",
+                  "sass",
+                  "tailwind",
+                  "webpack",
+                ].map((skill) => (
                   <motion.div
                     key={skill}
                     className="competencies hover:shadow-lg transition-shadow"
@@ -122,8 +176,8 @@ function Skills() {
                     </div>
                     <span className="skillsList">
                       {skill.charAt(0).toUpperCase() + skill.slice(1)}
-                      {skill === 'react' && 'Js'}
-                      {skill === 'next' && 'Js'}
+                      {skill === "react" && "Js"}
+                      {skill === "next" && "Js"}
                     </span>
                   </motion.div>
                 ))}
@@ -131,35 +185,55 @@ function Skills() {
             )}
 
             {/* Backend Section */}
-            {activeSection === 'backend' && (
+            {activeSection === "backend" && (
               <>
-                {['Mysql', 'mongodb', 'express', 'node', 'Firebase'].map((skill) => (
-                  <motion.div
-                    key={skill}
-                    className="competencies hover:shadow-lg transition-shadow"
-                    whileHover={{ y: -5 }}
-                  >
-                    <div className="logo">
-                      <img
-                        src={`/${skill}.png`}
-                        alt={`${skill} Logo`}
-                        className="object-contain"
-                      />
-                    </div>
-                    <span className="skillsList">
-                      {skill === 'express' ? 'ExpressJs' : 
-                       skill === 'node' ? 'NodeJs' :
-                       skill.toUpperCase()}
-                    </span>
-                  </motion.div>
-                ))}
+                {["Mysql", "mongodb", "express", "node", "Firebase"].map(
+                  (skill) => (
+                    <motion.div
+                      key={skill}
+                      className="competencies hover:shadow-lg transition-shadow"
+                      whileHover={{ y: -5 }}
+                    >
+                      <div className="logo">
+                        <img
+                          src={`/${skill}.png`}
+                          alt={`${skill} Logo`}
+                          className="object-contain"
+                        />
+                      </div>
+                      <span className="skillsList">
+                        {skill === "express"
+                          ? "ExpressJs"
+                          : skill === "node"
+                          ? "NodeJs"
+                          : skill.toUpperCase()}
+                      </span>
+                    </motion.div>
+                  )
+                )}
               </>
             )}
 
             {/* Tools Section */}
-            {activeSection === 'tools' && (
+            {activeSection === "tools" && (
               <>
-                {['aws', 'gcp', 'git', 'github', 'kubernetes', 'docker', 'postman', 'NPM', 'JSON', 'GitHubActions', 'ESLint', 'openAI', 'Slack', 'Vercel', 'Vite'].map((skill) => (
+                {[
+                  "aws",
+                  "gcp",
+                  "git",
+                  "github",
+                  "kubernetes",
+                  "docker",
+                  "postman",
+                  "NPM",
+                  "JSON",
+                  "GitHubActions",
+                  "ESLint",
+                  "openAI",
+                  "Slack",
+                  "Vercel",
+                  "Vite",
+                ].map((skill) => (
                   <motion.div
                     key={skill}
                     className="competencies hover:shadow-lg transition-shadow"
@@ -167,15 +241,19 @@ function Skills() {
                   >
                     <div className="logo">
                       <img
-                        src={`/${skill}${skill === 'postman' ? '.svg' : '.png'}`}
+                        src={`/${skill}${
+                          skill === "postman" ? ".svg" : ".png"
+                        }`}
                         alt={`${skill} Logo`}
                         className="object-contain"
                       />
                     </div>
                     <span className="font-medium">
-                      {skill === 'aws' ? 'AWS' :
-                       skill === 'gcp' ? 'GCP' :
-                       skill.charAt(0).toUpperCase() + skill.slice(1)}
+                      {skill === "aws"
+                        ? "AWS"
+                        : skill === "gcp"
+                        ? "GCP"
+                        : skill.charAt(0).toUpperCase() + skill.slice(1)}
                     </span>
                   </motion.div>
                 ))}

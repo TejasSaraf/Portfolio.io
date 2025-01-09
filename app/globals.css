@@ -74,7 +74,7 @@ body {
   background-color: #f5f5f7;
   border-radius: 20px;
   padding: 25px;
-  gap:20px;
+  gap: 20px;
   width: 80%;
 }
 
@@ -89,57 +89,61 @@ body {
   font-size: 20px;
 }
 
-.aboutTitle{
+.aboutTitle {
   display: flex;
-      align-items: center;
-      gap: 8px;
-  
+  align-items: center;
+  gap: 8px;
 }
 
-.aboutCategories{
+.aboutCategories {
   display: flex;
-      gap: 10px;
-      padding: 8px 0px 20px 30px;  
+  gap: 10px;
+  padding: 8px 0px 20px 30px;
 }
 
-.everyoneContent, 
-.recruiterContent{
+.everyoneContent,
+.recruiterContent {
   display: flex;
   padding: 0px 0px 0px 30px;
   font-size: 15px;
   font-weight: 200;
 }
 
-.experienceLogo{
+.experienceLogo {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.skillsTitle{
+.skillsTitle {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
 .mapIcon,
-.ecommerceIcon{
+.ecommerceIcon {
   width: 10rem;
 }
 
-.movieIcon{
+.movieIcon {
   width: 18rem;
 }
 
-.netflixIcon{
+.netflixIcon {
   width: 9rem;
 }
 
+.aboutButtons {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .projectsTitle,
-.educationTitle{
-display: flex;
-gap: 8px;
-align-items: center;
+.educationTitle {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .projects {
@@ -156,12 +160,12 @@ align-items: center;
 .jioLogo,
 .eliteSoftwaresLogo,
 .gravitechDreamsLogo,
-.exposysLabsLogo{
+.exposysLabsLogo {
   width: 4rem;
   height: 4rem;
 }
 
-.experience{
+.experience {
   display: flex;
   margin: 20px;
   flex-direction: column;
@@ -171,7 +175,7 @@ align-items: center;
   width: 80%;
 }
 
-.skills{
+.skills {
   display: flex;
   margin: 20px;
   flex-direction: column;
@@ -196,7 +200,7 @@ align-items: center;
 .jioDetails,
 .eliteDetails,
 .gravitechDetails,
-.exposysDetails{
+.exposysDetails {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -205,37 +209,37 @@ align-items: center;
   gap: 3px;
 }
 
-.categories{
+.categories {
   display: flex;
   gap: 5px;
   padding: 0px 0px 0px 30px;
 }
 
-.skillsContainer{
- display: flex;
- flex-wrap: wrap;
- justify-content: stretch;
- gap: .5rem;
- padding: 0px 0px 0px 30px;
-}
-
-.details{
+.skillsContainer {
   display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  gap: 0.5rem;
+  padding: 0px 0px 0px 30px;
 }
 
-h2{
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h2 {
   font-size: 20px;
   font-weight: 400;
 }
 
-h3{
+h3 {
   font-size: 18px;
 }
 
 .skillsButton,
-.skillsList{
+.skillsList {
   font-weight: 300;
 }
 
@@ -260,117 +264,120 @@ h1 {
   font-weight: bold;
 }
 
-.languages{
+.languages {
   display: flex;
-    border: 1px solid black;
-    width: 8%;
-    border-radius: 13px;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid black;
+  width: 8%;
+  border-radius: 13px;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar{
+.navbar {
   background: #f5f5f7;
   width: 100%;
   height: 4.5rem;
 }
 
-.navContents{
+.navContents {
   height: 4.5rem;
 }
 
-.profilePicture{
+.profilePicture {
   width: 15rem;
   height: 15rem;
 }
 
-.profileContent{
-  display:flex;
+.profileContent {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 22px;
 }
 
-.name{
-  display:flex;
+.name {
+  display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.title{
+.title {
   font-size: 42px;
-  letter-spacing: .009em;
+  letter-spacing: 0.009em;
   font-weight: 500;
-  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
 }
 
 .designation,
-.location{
-  font-size: 22px;
+.location {
+  font-size: 20px;
+  font-weight: 300;
 }
 
-.competencies{
+.competencies {
   align-items: center;
-    display: flex;
-    gap: 7px;
-    border: 1px solid hsl(0deg 1.27% 82.6%);
-    width: fit-content;
-    border-radius: 0.25rem;
-    padding: 0.30rem;
+  display: flex;
+  gap: 7px;
+  border: 1px solid hsl(0deg 1.27% 82.6%);
+  width: fit-content;
+  border-radius: 0.25rem;
+  padding: 0.3rem;
 }
 
-.logo{
+.logo {
   width: 2.5rem;
 }
 
-.technical{
+.technical {
   display: flex;
   gap: 15px;
 }
 
-.skillsSection{
+.skillsSection {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.openForWorkButton{
+.openForWorkButton {
   gap: 10px;
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.17648;
-  padding: 7px;
+  padding: 5px 8px 5px 8px;
   border-style: solid;
   border-width: 1px;
   border-radius: 980px;
-  letter-spacing: -.022em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
   pointer-events: all;
-  font-weight: 400;
-  background-color: rgba(0,0,0,0);
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0);
   --sk-button-margin-horizontal: 14px;
   --sk-button-margin-vertical: 14px;
 }
 
-.verified{
+.verified {
   width: 24px;
   height: 24px;
 }
 
-.navLogo{
+.navLogo {
   width: 30px;
   height: 38px;
 }
 
-.skillsSection{
+.skillsSection {
   gap: 10px;
 }
 
-.projectSkills{
+.projectSkills {
   display: flex;
   gap: 10px;
 }
 
-.Map{
+.Map {
   display: flex;
   width: 50%;
   gap: 18px;
@@ -378,38 +385,75 @@ h1 {
   font-weight: 300;
 }
 
-.projectHeading{
+.projectHeading {
   font-size: 20px;
 }
 
-.skillsLogo{
+.skillsLogo {
   width: 25px;
 }
 
-.projectsSection{
+.projectsSection {
   display: flex;
   width: 100%;
   gap: 10px;
 }
 
-.projects{
+.projects {
   gap: 30px;
 }
 
-.link{
+.link {
   display: flex;
   gap: 10px;
 }
 
-.projectTitle{
+.projectTitle {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .IITLogo,
-.SPPULogo{
+.SPPULogo {
   width: 4rem;
   height: 4rem;
 }
 
+.searchBar {
+  width: 100%;
+}
+ß .mt-4 {
+  width: 100%;
+}
+
+.Sections {
+  color: rgb(130, 54, 236);
+  padding: 0px 0px 0px 18px;
+}
+
+.Job {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 300;
+}
+
+.OpenToWork {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 300;
+}
+
+.Links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
