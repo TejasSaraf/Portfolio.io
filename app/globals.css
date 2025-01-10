@@ -140,13 +140,30 @@ body {
 }
 
 .projectsTitle,
-.educationTitle {
+.educationTitle,
+.patentTitle {
   display: flex;
   gap: 8px;
   align-items: center;
 }
 
+.patentContent{
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .projects {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  background-color: #f5f5f7;
+  border-radius: 20px;
+  padding: 25px;
+  width: 80%;
+  font-size: 20px;
+}
+
+.patent {
   display: flex;
   margin: 20px;
   flex-direction: column;
