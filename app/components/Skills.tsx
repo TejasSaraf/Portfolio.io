@@ -37,7 +37,7 @@ function Skills() {
           <svg className="w-6 h-6" fill="currentColor" viewBox="0 -960 960 960">
             <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"></path>
           </svg>
-          <h1 className="text-3xl font-bold">Skills</h1>
+          <span className="h1">Skills</span>
         </div>
 
         <div className="categories">

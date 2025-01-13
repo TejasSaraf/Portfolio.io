@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Patent from "./components/Patent";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Projects />
         <Education />
         <Patent />
+        <Footer />
       </div>
     </>
   );

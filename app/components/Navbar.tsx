@@ -1,38 +1,42 @@
-"use client";
+'use client'
 
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import { Search } from "lucide-react";
-import SearchPopup from "./SearchPopup";
+import Image from "next/image"
+import { useState, useEffect } from "react"
+import { Search, Moon, Sun } from 'lucide-react'
+import SearchPopup from "./SearchPopup"
+import { useDarkMode } from "../contexts/DarkModeContext"
 
 function Navbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const { isDarkMode, toggleDarkMode } = useDarkMode()
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
+      const scrollPosition = window.scrollY
       if (scrollPosition > 0) {
-        setIsScrolled(true);
+        setIsScrolled(true)
       } else {
-        setIsScrolled(false);
+        setIsScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const handleSearchClick = () => {
-    setIsSearchOpen(true);
-  };
+    setIsSearchOpen(true)
+  }
 
   return (
     <>
       <nav
         className={`navbar fixed top-0 left-0 right-0 z-40 transition-all duration-300 ease-in-out ${
-          isScrolled ? "bg-white shadow-md" : "bg-transparent"
+          isScrolled 
+            ? "bg-background shadow-md" 
+            : "bg-transparent"
         }`}
       >
         <div className="mx-auto max-w-8xl px-6 sm:px-32 lg:px-34">
@@ -43,9 +47,9 @@ function Navbar() {
                 type="button"
                 className={`relative inline-flex items-center justify-center rounded-md p-2 ${
                   isScrolled
-                    ? "text-gray-400 hover:bg-gray-100 hover:text-gray-500"
-                    : "text-white hover:bg-gray-700 hover:text-white"
-                } focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white`}
+                    ? "text-foreground hover:bg-secondary hover:text-primary"
+                    : "text-foreground hover:bg-secondary hover:text-primary"
+                } focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary`}
                 aria-controls="mobile-menu"
                 aria-expanded={isMobileMenuOpen}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -89,7 +93,7 @@ function Navbar() {
               <div className="NavLogo flex flex-shrink-0 items-center">
                 <Image
                   className="h-8 w-auto"
-                  src="/T.png"
+                  src="/layers.png"
                   alt="Your Company"
                   width={38}
                   height={38}
@@ -100,13 +104,13 @@ function Navbar() {
                   <div className="relative flex flex-1 items-stretch">
                     <button
                       onClick={handleSearchClick}
-                      className="bg-background3 w-full text-left pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white text-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors duration-300"
+                      className="w-full text-left pl-10 pr-3 py-2 border border-secondary rounded-md leading-5 text-foreground focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary sm:text-sm transition-colors duration-300"
                     >
                       Type / to search
                     </button>
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                       <Search
-                        className="h-5 w-5 text-gray-400"
+                        className="h-5 w-5 text-foreground"
                         aria-hidden="true"
                       />
                     </div>
@@ -116,18 +120,19 @@ function Navbar() {
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <button
-                className={`paint p-1 rounded-full ${
+                onClick={toggleDarkMode}
+                className={`p-1 rounded-full ${
                   isScrolled
-                    ? "text-gray-400 hover:text-gray-500"
-                    : "text-gray-300 hover:text-white"
-                } focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors duration-300`}
+                    ? "text-foreground hover:text-primary"
+                    : "text-foreground hover:text-primary"
+                } focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background transition-colors duration-300`}
+                aria-label="Toggle dark mode"
               >
-                <Image
-                  src="/paint-palette.png"
-                  alt="Paint Palette"
-                  width={25}
-                  height={25}
-                />
+                {isDarkMode ? (
+                  <Sun className="h-6 w-6" />
+                ) : (
+                  <Moon className="h-6 w-6" />
+                )}
               </button>
             </div>
           </div>
@@ -141,7 +146,7 @@ function Navbar() {
           <div className="space-y-1 px-2 pb-3 pt-2">
             <button
               onClick={handleSearchClick}
-              className="w-full text-left pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white text-gray-400 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition-colors duration-300"
+              className="w-full text-left pl-10 pr-3 py-2 border border-secondary rounded-md leading-5 bg-background3 text-foreground focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary sm:text-sm transition-colors duration-300"
             >
               Search
             </button>
@@ -153,7 +158,8 @@ function Navbar() {
         onClose={() => setIsSearchOpen(false)}
       />
     </>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
+
