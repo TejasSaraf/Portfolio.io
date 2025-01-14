@@ -121,6 +121,7 @@ body {
 .skillsTitle {
   display: flex;
   align-items: center;
+  padding: 0 0 25px 0;
   gap: 8px;
 }
 
@@ -213,6 +214,20 @@ body {
   box-shadow: 2px 4px 12px #00000014;
 }
 
+.skillsSection svg {
+  width: 50px;
+  height: auto; /* Maintains aspect ratio */
+}
+
+.projectSkills svg {
+  width: 20px;
+  height: auto;
+}
+
+#imageLogo {
+  width: 50px;
+}
+
 .jio,
 .eliteSoftwares,
 .gravitechDreams,
@@ -272,6 +287,11 @@ h3 {
 .skillsButton,
 .skillsList {
   font-weight: 300;
+}
+
+.skillsTitle svg{
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .aboutContainer {
@@ -497,7 +517,7 @@ h3 {
   gap: 20px;
 }
 
-@media (min-width: 375px) and (max-width: 500px){
+@media (min-width: 375px) and (max-width: 500px) {
   .projectsSection {
     display: flex;
     flex-direction: column;
@@ -509,12 +529,17 @@ h3 {
     width: 100%;
   }
 
+  .profilePicture{
+    width: 12rem;
+    height: 12rem;
+  }
+
   .skillsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: stretch;
     gap: 0.3rem;
-    font-size: 19px;
+    font-size: 16px;
     padding: 0;
   }
 
@@ -525,32 +550,34 @@ h3 {
     padding: 0;
   }
 
-  .profile{
+  .profile {
     width: 90%;
   }
 
-  .about{
+  .about {
     width: 90%;
   }
 
-  .skills{
+  .skills {
     width: 90%;
     padding: 20px;
   }
 
-  .experience{
+  .experience {
+    width: 90%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .projects {
     width: 90%;
   }
 
-  .projects{
+  .patent {
     width: 90%;
   }
 
-  .patent{
-    width: 90%;
-  }
-
-  .competencies{
+  .competencies {
     gap: 2px;
   }
 
@@ -559,48 +586,57 @@ h3 {
     height: 12rem;
   } */
 
-  .title{
+  .title {
     font-size: 28px;
   }
 
-  .verified{
+  .verified {
     width: 17px;
     height: 17px;
   }
 
   .designation,
-  .location{
+  .location {
     font-size: 18px;
   }
 
   .jioLogo,
   .eliteSoftwaresLogo,
   .gravitechDreamsLogo,
-  .exposysLabsLogo{
+  .exposysLabsLogo {
     width: 2.5rem;
     height: 2.5rem;
   }
 
-  .SPPULogo{
+  .SPPULogo {
     width: 3rem;
     height: 3rem;
   }
 
-  .IITLogo{
+  .IITLogo {
     width: 5rem;
     height: 3rem;
   }
 
-  h2{
+  h2 {
     font-size: 18px;
   }
 
-  .aboutCategories{
+  .aboutCategories {
     padding: 10px 0 10px 0px;
   }
 
   .everyoneContent,
-  .recruiterContent{
+  .recruiterContent {
     padding: 0;
+  }
+
+  .skillsSection svg {
+    width: 30px;
+    height: auto; /* Maintains aspect ratio */
+  }
+
+  #imageLogo {
+    width: 30px;
   }
 }
