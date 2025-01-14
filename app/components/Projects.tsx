@@ -13,7 +13,13 @@ function Projects() {
       <div className="projectsSection">
         <div className="Map">
           <div className="mapIcon">
-            <Image className="Logo" src="/location.png" alt="logo"></Image>
+            <Image
+              className="Logo"
+              src="/location.png"
+              alt="logo"
+              width={150} // Adjust the width as needed
+              height={150}
+            ></Image>
           </div>
           <div className="projectTitle">
             <div className="projectHeading">
@@ -21,10 +27,22 @@ function Projects() {
             </div>
             <div className="link">
               <a href="https://github.com/TejasSaraf/Illinois-Tech-Campus-Map">
-                <Image className="skillsLogo" src="/github.png" alt=""></Image>
+                <Image
+                  className="skillsLogo"
+                  src="/github.png"
+                  alt=""
+                  width={150} // Adjust the width as needed
+                  height={150}
+                ></Image>
               </a>
               <a href="https://illinoistechmap.netlify.app/">
-                <Image className="skillsLogo" src="/globe.png" alt=""></Image>
+                <Image
+                  className="skillsLogo"
+                  src="/globe.png"
+                  alt=""
+                  width={150} // Adjust the width as needed
+                  height={150}
+                ></Image>
               </a>
             </div>
             <span>
@@ -33,21 +51,47 @@ function Projects() {
               navigation and custom interactive markers.
             </span>
             <div className="projectSkills">
-              <Image className="skillsLogo" src="/react.png" alt="react" />
+              <Image
+                className="skillsLogo"
+                src="/react.png"
+                alt="react"
+                width={150} // Adjust the width as needed
+                height={150}
+              />
               <Image
                 className="skillsLogo"
                 src="/javascript.png"
                 alt="javascript"
+                width={150} // Adjust the width as needed
+                height={150}
               ></Image>
-              <Image className="skillsLogo" src="/html.png" alt="html" />
-              <Image className="skillsLogo" src="/css.png" alt="" />
+              <Image
+                className="skillsLogo"
+                src="/html.png"
+                alt="html"
+                width={150} // Adjust the width as needed
+                height={150}
+              />
+              <Image
+                className="skillsLogo"
+                src="/css.png"
+                alt=""
+                width={150} // Adjust the width as needed
+                height={150}
+              />
             </div>
           </div>
         </div>
 
         <div className="Map">
           <div className="movieIcon">
-            <Image className="Logo" src="/movie.png" alt=""></Image>
+            <Image
+              className="Logo"
+              src="/movie.png"
+              alt=""
+              width={150} // Adjust the width as needed
+              height={150}
+            ></Image>
           </div>
           <div className="projectTitle">
             <div className="projectHeading">
@@ -55,7 +99,13 @@ function Projects() {
             </div>
             <div className="link">
               <a href="https://github.com/TejasSaraf/Movie-Booking-System">
-                <Image className="skillsLogo" src="/github.png" alt=""></Image>
+                <Image
+                  className="skillsLogo"
+                  src="/github.png"
+                  alt=""
+                  width={150} // Adjust the width as needed
+                  height={150}
+                ></Image>
               </a>
             </div>
             <span>
@@ -66,11 +116,19 @@ function Projects() {
               and user bookings, ensuring robust data management and integrity.
             </span>
             <div className="projectSkills">
-              <Image className="skillsLogo" src="/java.png" alt="java" />
+              <Image
+                className="skillsLogo"
+                src="/java.png"
+                alt="java"
+                width={150} // Adjust the width as needed
+                height={150}
+              />
               <Image
                 className="skillsLogo"
                 src="/Mysql.png"
                 alt="mysql"
+                width={150} // Adjust the width as needed
+                height={150}
               ></Image>
             </div>
           </div>
@@ -80,7 +138,13 @@ function Projects() {
       <div className="projectsSection">
         <div className="Map">
           <div className="ecommerceIcon">
-            <Image className="Logo" src="/online-shop.png" alt=""></Image>
+            <Image
+              className="Logo"
+              src="/online-shop.png"
+              alt=""
+              width={150} // Adjust the width as needed
+              height={150}
+            ></Image>
           </div>
           <div className="projectTitle">
             <div className="projectHeading">
@@ -88,7 +152,13 @@ function Projects() {
             </div>
             <div className="link">
               <a href="https://github.com/TejasSaraf/Blockchain-E-Commerce">
-                <Image className="skillsLogo" src="/github.png" alt=""></Image>
+                <Image
+                  className="skillsLogo"
+                  src="/github.png"
+                  alt=""
+                  width={150} // Adjust the width as needed
+                  height={150}
+                ></Image>
               </a>
             </div>
             <span>
@@ -98,18 +168,40 @@ function Projects() {
               currency which is developed using blockchain.
             </span>
             <div className="projectSkills">
-              <Image className="skillsLogo" src="/react.png" alt="react" />
+              <Image
+                className="skillsLogo"
+                src="/react.png"
+                alt="react"
+                width={150} // Adjust the width as needed
+                height={150}
+              />
               <Image
                 className="skillsLogo"
                 src="/javascript.png"
                 alt="javascript"
+                width={150} // Adjust the width as needed
+                height={150}
               ></Image>
-              <Image className="skillsLogo" src="/html.png" alt="html" />
-              <Image className="skillsLogo" src="/css.png" alt="css" />
+              <Image
+                className="skillsLogo"
+                src="/html.png"
+                alt="html"
+                width={150} // Adjust the width as needed
+                height={150}
+              />
+              <Image
+                className="skillsLogo"
+                src="/css.png"
+                alt="css"
+                width={150} // Adjust the width as needed
+                height={150}
+              />
               <Image
                 className="skillsLogo"
                 src="/solidity.png"
                 alt="solidity"
+                width={150} // Adjust the width as needed
+                height={150}
               />
             </div>
           </div>
@@ -117,7 +209,13 @@ function Projects() {
 
         <div className="Map">
           <div className="socialIcon">
-            <Image className="Logo" src="/social-media.png" alt=""></Image>
+            <Image
+              className="Logo"
+              src="/social-media.png"
+              alt=""
+              width={150} // Adjust the width as needed
+              height={150}
+            ></Image>
           </div>
           <div className="projectTitle">
             <div className="projectHeading">
@@ -125,7 +223,13 @@ function Projects() {
             </div>
             <div className="link">
               <a href="https://github.com/TejasSaraf/Social-Media-Handler">
-                <Image className="skillsLogo" src="/github.png" alt=""></Image>
+                <Image
+                  className="skillsLogo"
+                  src="/github.png"
+                  alt=""
+                  width={150} // Adjust the width as needed
+                  height={150}
+                ></Image>
               </a>
             </div>
             <span>
@@ -139,14 +243,30 @@ function Projects() {
                 className="skillsLogo"
                 src="/Javascript.png"
                 alt="Javascript"
+                width={150} // Adjust the width as needed
+                height={150}
               />
               <Image
                 className="skillsLogo"
                 src="/Mysql.png"
                 alt="mysql"
+                width={150} // Adjust the width as needed
+                height={150}
               ></Image>
-              <Image className="skillsLogo" src="/html.png" alt="html" />
-              <Image className="skillsLogo" src="/css.png" alt="" />
+              <Image
+                className="skillsLogo"
+                src="/html.png"
+                alt="html"
+                width={150} // Adjust the width as needed
+                height={150}
+              />
+              <Image
+                className="skillsLogo"
+                src="/css.png"
+                alt=""
+                width={150} // Adjust the width as needed
+                height={150}
+              />
             </div>
           </div>
         </div>

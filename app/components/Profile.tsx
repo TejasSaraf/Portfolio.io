@@ -24,6 +24,8 @@ function Profile() {
               className="profilePicture rounded-full"
               src="/Avatar.jpeg"
               alt="Tejas Saraf Avatar"
+              width={150} // Adjust the width as needed
+              height={150}
             />
           </div>
           <div className="profileContent">

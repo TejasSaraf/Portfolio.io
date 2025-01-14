@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from 'next/image';
+import Image from "next/image";
 
 function Skills() {
   const [activeSection, setActiveSection] = useState("current");
@@ -104,6 +104,8 @@ function Skills() {
                         src={`/${skill.toLowerCase()}.png`}
                         alt={`${skill} Logo`}
                         className="object-contain"
+                        width={150} // Adjust the width as needed
+                        height={150}
                       />
                     </div>
                     <span className="skillsList">{skill}</span>
@@ -135,6 +137,8 @@ function Skills() {
                         src={`/${skill.toLowerCase()}.png`}
                         alt={`${skill} Logo`}
                         className="object-contain"
+                        width={150} // Adjust the width as needed
+                        height={150}
                       />
                     </div>
                     <span className="skillsList">{skill}</span>
@@ -173,6 +177,8 @@ function Skills() {
                         src={`/${skill}.png`}
                         alt={`${skill} Logo`}
                         className="object-contain"
+                        width={150} // Adjust the width as needed
+                        height={150}
                       />
                     </div>
                     <span className="skillsList">
@@ -200,6 +206,8 @@ function Skills() {
                           src={`/${skill}.png`}
                           alt={`${skill} Logo`}
                           className="object-contain"
+                          width={150} // Adjust the width as needed
+                          height={150}
                         />
                       </div>
                       <span className="skillsList">
@@ -247,6 +255,8 @@ function Skills() {
                         }`}
                         alt={`${skill} Logo`}
                         className="object-contain"
+                        width={150} // Adjust the width as needed
+                        height={150}
                       />
                     </div>
                     <span className="font-medium">

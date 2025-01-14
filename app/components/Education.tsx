@@ -1,5 +1,5 @@
 "use client";
-import Image from 'next/image';
+import Image from "next/image";
 
 function Education() {
   return (
@@ -13,7 +13,13 @@ function Education() {
       <div className="projectsSection">
         <div className="Map">
           <div className="icon">
-            <Image className="IITLogo" src="/IITChicago.png" alt=''></Image>
+            <Image
+              className="IITLogo"
+              src="/IITChicago.png"
+              alt=""
+              width={150} // Adjust the width as needed
+              height={150}
+            ></Image>
           </div>
           <div className="projectTitle">
             <h2>Masters, Information Technology and Management</h2>
@@ -26,7 +32,13 @@ function Education() {
 
         <div className="Map">
           <div className="icon">
-            <Image className="SPPULogo" src="/SPPU.png" alt=''></Image>
+            <Image
+              className="SPPULogo"
+              src="/SPPU.png"
+              alt=""
+              width={150} // Adjust the width as needed
+              height={150}
+            ></Image>
           </div>
           <div className="projectTitle">
             <h2>BTech, Information Technology</h2>
