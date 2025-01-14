@@ -106,7 +106,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
           <div className="searchBar relative">
             <input
               type="search"
-              className="w-full pl-10 pr-3 py-2 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-customPurple focus:border-customPurple sm:text-sm"
+              className="w-full pl-10 pr-3 py-2 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:border-[var(--sk-body-link-color,#06c)] focus:ring-[var(--sk-body-link-color,#06c)] sm:text-sm"
               placeholder="Search components..."
               aria-label="Search components"
               onChange={handleSearchChange}

@@ -5,18 +5,18 @@
 :root {
   --background: hsl(0, 0%, 100%);
   --foreground: hsl(0, 0%, 10%);
-  --primary: hsl(280, 100%, 50%);
-  --secondary: hsl(220, 60%, 80%);
-  --accent: hsl(280, 100%, 50%);
+  --primary: var(--sk-body-link-color, #06c);
+  --secondary: var(--sk-body-link-color, #06c);
+  --accent: var(--sk-body-link-color, #06c);
   --background3: hsl(0, 0%, 90%);
 }
 
 .dark {
   --background: hsl(220, 20%, 10%);
   --foreground: hsl(220, 20%, 90%);
-  --primary: hsl(280, 100%, 50%);
-  --secondary: hsl(280, 100%, 50%);
-  --accent: hsl(280, 100%, 60%);
+  --primary: var(--sk-body-link-color, #06c);
+  --secondary: var(--sk-body-link-color, #06c);
+  --accent: var(--sk-body-link-color, #06c);
   --background3: hsl(220, 20%, 20%);
 }
 
@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 5rem; /* Add padding to account for fixed navbar */
+  width: fit-content;
 }
 
 .paint {
@@ -136,12 +137,12 @@ body {
   width: 9rem;
 }
 
-.netflix{
+.netflix {
   display: flex;
-    width: 50%;
-    font-size: 15px;
-    font-weight: 300;
-    gap: 18px;
+  width: 50%;
+  font-size: 15px;
+  font-weight: 300;
+  gap: 18px;
 }
 
 .aboutButtons {
@@ -157,7 +158,7 @@ body {
   align-items: center;
 }
 
-.patentContent{
+.patentContent {
   font-size: 15px;
   font-weight: 300;
 }
@@ -173,7 +174,7 @@ body {
   box-shadow: 2px 4px 12px #00000014;
 }
 
-.patent{
+.patent {
   display: flex;
   margin: 20px;
   flex-direction: column;
@@ -255,7 +256,7 @@ body {
   align-items: flex-end;
 }
 
-.Links{
+.Links {
   font-size: 15px;
 }
 
@@ -290,10 +291,11 @@ h3 {
 }
 
 .h1 {
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
   font-size: 28px;
   font-weight: 500;
-  letter-spacing: .007em;
+  letter-spacing: 0.007em;
   line-height: 1.1428571429;
   margin-top: 0;
 }
@@ -448,11 +450,11 @@ h3 {
 }
 
 .IITLogo {
-  width: 4rem;
+  width: 3rem;
   height: 3rem;
 }
 
-.SPPULogo{
+.SPPULogo {
   width: 4rem;
   height: 4rem;
 }
@@ -465,7 +467,7 @@ h3 {
 }
 
 .Sections {
-  color: rgb(130, 54, 236);
+  color: var(--sk-body-link-color, #06c);
   padding: 0px 0px 0px 18px;
 }
 
@@ -493,4 +495,112 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media (min-width: 375px) and (max-width: 500px){
+  .projectsSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .Map {
+    width: 100%;
+  }
+
+  .skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    gap: 0.3rem;
+    font-size: 19px;
+    padding: 0;
+  }
+
+  .categories {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .profile{
+    width: 90%;
+  }
+
+  .about{
+    width: 90%;
+  }
+
+  .skills{
+    width: 90%;
+    padding: 20px;
+  }
+
+  .experience{
+    width: 90%;
+  }
+
+  .projects{
+    width: 90%;
+  }
+
+  .patent{
+    width: 90%;
+  }
+
+  .competencies{
+    gap: 2px;
+  }
+
+  .profilePicture{
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .title{
+    font-size: 28px;
+  }
+
+  .verified{
+    width: 17px;
+    height: 17px;
+  }
+
+  .designation,
+  .location{
+    font-size: 18px;
+  }
+
+  .jioLogo,
+  .eliteSoftwaresLogo,
+  .gravitechDreamsLogo,
+  .exposysLabsLogo{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .SPPULogo{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .IITLogo{
+    width: 5rem;
+    height: 3rem;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  .aboutCategories{
+    padding: 10px 0 10px 0px;
+  }
+
+  .everyoneContent,
+  .recruiterContent{
+    padding: 0;
+  }
 }

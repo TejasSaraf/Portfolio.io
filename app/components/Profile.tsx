@@ -9,7 +9,7 @@ function Profile() {
 
   const handleSearchClick = () => {
     setIsSearchOpen(true);
-  }
+  };
 
   return (
     <>
@@ -18,7 +18,7 @@ function Profile() {
           href="#"
           className="aboutContainer block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
         >
-          <div className="avatar bg-primary/25 rounded-full ring ring-offset-4 ring-offset-background ring-[rgb(154_100_229)]">
+          <div className="avatar bg-primary/25 rounded-full ring-2 ring-offset-4 ring-offset-background ring-[var(--sk-body-link-color,#06c)]">
             <img
               className="profilePicture rounded-full"
               src="/Avatar.jpeg"

@@ -14,7 +14,7 @@ function About() {
 
   const buttonVariants = {
     active: {
-      backgroundColor: "hsl(265 83% 57%)",
+      backgroundColor: "var(--sk-body-link-color, #06c)",
       color: "white",
       scale: 1.05,
       borderRadius: "25px",
@@ -24,7 +24,7 @@ function About() {
       backgroundColor: "#E5E7EB",
       color: "black",
       scale: 1,
-      border: "1px solid hsl(265 83% 57%)",
+      border: "1px solid var(--sk-body-link-color, #06c)",
       borderRadius: "25px",
       padding: "0px  10px",
     },

@@ -15,8 +15,10 @@ export default {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         accent: "var(--accent)",
-        customPurple: 'rgb(130, 54, 236)',
         background3: 'var(--background3)',
+      },
+      ringColor: {
+        custom: 'var(--sk-body-link-color, #06c)',
       },
       fontFamily: {
         sans: [
