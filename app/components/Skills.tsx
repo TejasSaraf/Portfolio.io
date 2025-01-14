@@ -101,7 +101,7 @@ function Skills() {
                   >
                     <div className="logo">
                       <Image
-                        src={`/${skill.toLowerCase()}.png`}
+                        src={`/${skill}.png`}
                         alt={`${skill} Logo`}
                         className="object-contain"
                         width={150} // Adjust the width as needed
@@ -249,15 +249,15 @@ function Skills() {
                     whileHover={{ y: -5 }}
                   >
                     <div className="logo">
+                    <div className="logo">
                       <Image
-                        src={`/${skill}${
-                          skill === "postman" ? ".svg" : ".png"
-                        }`}
+                        src={`/${skill}.png`}
                         alt={`${skill} Logo`}
                         className="object-contain"
                         width={150} // Adjust the width as needed
                         height={150}
                       />
+                    </div>
                     </div>
                     <span className="font-medium">
                       {skill === "aws"
