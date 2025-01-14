@@ -73,9 +73,9 @@ function About() {
                 <div className="everyone">
                   <motion.span layout>
                     As a driven Software Developer with hands-on experience
-                    across web and software development, I'm passionate about
+                    across web and software development, I am passionate about
                     crafting high-performance applications that improve user
-                    experiences. Currently pursuing a Master's in Information
+                    experiences. Currently pursuing a Masters in Information
                     Technology and Management at Illinois Institute of
                     Technology, I bring over a year of professional experience
                     in diverse roles within established organizations like Jio
@@ -85,7 +85,7 @@ function About() {
                   <motion.span layout>
                     I thrive in collaborative, agile environments and am
                     constantly motivated by challenges that allow me to
-                    innovate. I'm also proud to hold a patent in quantum
+                    innovate. I am also proud to hold a patent in quantum
                     computing, contributing to advancements in qubit-based
                     processing for transformative industries like AI and Quantum
                     Computing.
@@ -93,7 +93,7 @@ function About() {
                   <motion.span layout>
                     Key skills include Java, JavaScript, Angular, React, and
                     Typescript, along with database management and cloud
-                    technologies like AWS and Docker. I'm adept at Full-stack
+                    technologies like AWS and Docker. I am adept at Full-stack
                     development, Front-End development, backend services, and
                     integrating REST APIs to drive results. I look forward to
                     connecting with others in the industry, exploring
@@ -101,7 +101,7 @@ function About() {
                     make a meaningful impact.
                   </motion.span>
                   <motion.span layout>
-                    Let's connect—reach out if you're looking for a tech-driven
+                    Lets connect—reach out if youre looking for a tech-driven
                     professional ready to tackle complex problems and drive
                     innovation!
                   </motion.span>
@@ -122,7 +122,7 @@ function About() {
                     1 years of experience in Software Development.
                   </motion.li>
                   <motion.li layout>
-                    Master's in Information Technology and Management
+                    Masters in Information Technology and Management
                   </motion.li>
                   <motion.li layout>
                     Open Source Software Developer Enthusiast 

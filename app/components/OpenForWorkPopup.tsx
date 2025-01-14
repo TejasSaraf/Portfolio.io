@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { X } from "lucide-react";
 
 interface SearchPopupProps {
@@ -9,7 +9,6 @@ interface SearchPopupProps {
 }
 
 function OpenForWorkPopup({ isOpen, onClose }: SearchPopupProps) {
-  const [searchQuery, setSearchQuery] = useState("");
   const searchRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -42,26 +41,6 @@ function OpenForWorkPopup({ isOpen, onClose }: SearchPopupProps) {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
-
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(e.target.value);
-  };
-
-  const handleComponentClick = (component: string) => {
-    onClose();
-    // Smooth scroll below the navbar
-    const element = document.getElementById(component.toLowerCase());
-    const navbarHeight = 5.5 * 16;
-
-    if (element) {
-      const elementPosition =
-        element.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: elementPosition - navbarHeight, // Adjust scroll position based on navbar height
-        behavior: "smooth",
-      });
-    }
-  };
 
   if (!isOpen) return null;
 

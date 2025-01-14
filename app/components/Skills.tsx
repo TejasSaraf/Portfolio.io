@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from 'next/image';
 
 function Skills() {
   const [activeSection, setActiveSection] = useState("current");
@@ -99,7 +100,7 @@ function Skills() {
                     whileHover={{ y: -5 }}
                   >
                     <div className="logo">
-                      <img
+                      <Image
                         src={`/${skill.toLowerCase()}.png`}
                         alt={`${skill} Logo`}
                         className="object-contain"
@@ -130,7 +131,7 @@ function Skills() {
                     whileHover={{ y: -5 }}
                   >
                     <div className="logo">
-                      <img
+                      <Image
                         src={`/${skill.toLowerCase()}.png`}
                         alt={`${skill} Logo`}
                         className="object-contain"
@@ -168,7 +169,7 @@ function Skills() {
                     whileHover={{ y: -5 }}
                   >
                     <div className="logo">
-                      <img
+                      <Image
                         src={`/${skill}.png`}
                         alt={`${skill} Logo`}
                         className="object-contain"
@@ -195,7 +196,7 @@ function Skills() {
                       whileHover={{ y: -5 }}
                     >
                       <div className="logo">
-                        <img
+                        <Image
                           src={`/${skill}.png`}
                           alt={`${skill} Logo`}
                           className="object-contain"
@@ -240,7 +241,7 @@ function Skills() {
                     whileHover={{ y: -5 }}
                   >
                     <div className="logo">
-                      <img
+                      <Image
                         src={`/${skill}${
                           skill === "postman" ? ".svg" : ".png"
                         }`}

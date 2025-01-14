@@ -6,7 +6,6 @@ import {
   Code,
   FolderGit2,
   GraduationCap,
-  Icon,
   Info,
   Search,
   User,

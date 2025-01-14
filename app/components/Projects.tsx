@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 function Projects() {
   return (
@@ -12,7 +13,7 @@ function Projects() {
       <div className="projectsSection">
         <div className="Map">
           <div className="mapIcon">
-            <img className="Logo" src="/location.png"></img>
+            <Image className="Logo" src="/location.png" alt="logo"></Image>
           </div>
           <div className="projectTitle">
             <div className="projectHeading">
@@ -20,10 +21,10 @@ function Projects() {
             </div>
             <div className="link">
               <a href="https://github.com/TejasSaraf/Illinois-Tech-Campus-Map">
-                <img className="skillsLogo" src="/github.png"></img>
+                <Image className="skillsLogo" src="/github.png" alt=""></Image>
               </a>
               <a href="https://illinoistechmap.netlify.app/">
-                <img className="skillsLogo" src="/globe.png"></img>
+                <Image className="skillsLogo" src="/globe.png" alt=""></Image>
               </a>
             </div>
             <span>
@@ -32,21 +33,21 @@ function Projects() {
               navigation and custom interactive markers.
             </span>
             <div className="projectSkills">
-              <img className="skillsLogo" src="/react.png" alt="react" />
-              <img
+              <Image className="skillsLogo" src="/react.png" alt="react" />
+              <Image
                 className="skillsLogo"
                 src="/javascript.png"
                 alt="javascript"
-              ></img>
-              <img className="skillsLogo" src="/html.png" alt="html" />
-              <img className="skillsLogo" src="/css.png" alt="" />
+              ></Image>
+              <Image className="skillsLogo" src="/html.png" alt="html" />
+              <Image className="skillsLogo" src="/css.png" alt="" />
             </div>
           </div>
         </div>
 
         <div className="Map">
           <div className="movieIcon">
-            <img className="Logo" src="/movie.png"></img>
+            <Image className="Logo" src="/movie.png" alt=""></Image>
           </div>
           <div className="projectTitle">
             <div className="projectHeading">
@@ -54,7 +55,7 @@ function Projects() {
             </div>
             <div className="link">
               <a href="https://github.com/TejasSaraf/Movie-Booking-System">
-                <img className="skillsLogo" src="/github.png"></img>
+                <Image className="skillsLogo" src="/github.png" alt=""></Image>
               </a>
             </div>
             <span>
@@ -65,8 +66,12 @@ function Projects() {
               and user bookings, ensuring robust data management and integrity.
             </span>
             <div className="projectSkills">
-              <img className="skillsLogo" src="/java.png" alt="java" />
-              <img className="skillsLogo" src="/Mysql.png" alt="mysql"></img>
+              <Image className="skillsLogo" src="/java.png" alt="java" />
+              <Image
+                className="skillsLogo"
+                src="/Mysql.png"
+                alt="mysql"
+              ></Image>
             </div>
           </div>
         </div>
@@ -75,7 +80,7 @@ function Projects() {
       <div className="projectsSection">
         <div className="Map">
           <div className="ecommerceIcon">
-            <img className="Logo" src="/online-shop.png"></img>
+            <Image className="Logo" src="/online-shop.png" alt=""></Image>
           </div>
           <div className="projectTitle">
             <div className="projectHeading">
@@ -83,7 +88,7 @@ function Projects() {
             </div>
             <div className="link">
               <a href="https://github.com/TejasSaraf/Blockchain-E-Commerce">
-                <img className="skillsLogo" src="/github.png"></img>
+                <Image className="skillsLogo" src="/github.png" alt=""></Image>
               </a>
             </div>
             <span>
@@ -93,22 +98,26 @@ function Projects() {
               currency which is developed using blockchain.
             </span>
             <div className="projectSkills">
-              <img className="skillsLogo" src="/react.png" alt="react" />
-              <img
+              <Image className="skillsLogo" src="/react.png" alt="react" />
+              <Image
                 className="skillsLogo"
                 src="/javascript.png"
                 alt="javascript"
-              ></img>
-              <img className="skillsLogo" src="/html.png" alt="html" />
-              <img className="skillsLogo" src="/css.png" alt="css" />
-              <img className="skillsLogo" src="/solidity.png" alt="solidity" />
+              ></Image>
+              <Image className="skillsLogo" src="/html.png" alt="html" />
+              <Image className="skillsLogo" src="/css.png" alt="css" />
+              <Image
+                className="skillsLogo"
+                src="/solidity.png"
+                alt="solidity"
+              />
             </div>
           </div>
         </div>
 
         <div className="Map">
           <div className="socialIcon">
-            <img className="Logo" src="/social-media.png"></img>
+            <Image className="Logo" src="/social-media.png" alt=""></Image>
           </div>
           <div className="projectTitle">
             <div className="projectHeading">
@@ -116,21 +125,28 @@ function Projects() {
             </div>
             <div className="link">
               <a href="https://github.com/TejasSaraf/Social-Media-Handler">
-                <img className="skillsLogo" src="/github.png"></img>
+                <Image className="skillsLogo" src="/github.png" alt=""></Image>
               </a>
             </div>
             <span>
-              A Media Handler that handles 5 different social media platforms, automates post-scheduling for social media platforms while ensuring Software Development Lifecycle compliance for reliable performance.
+              A Media Handler that handles 5 different social media platforms,
+              automates post-scheduling for social media platforms while
+              ensuring Software Development Lifecycle compliance for reliable
+              performance.
             </span>
             <div className="projectSkills">
-              <img className="skillsLogo" src="/Javascript.png" alt="Javascript" />
-              <img
+              <Image
+                className="skillsLogo"
+                src="/Javascript.png"
+                alt="Javascript"
+              />
+              <Image
                 className="skillsLogo"
                 src="/Mysql.png"
                 alt="mysql"
-              ></img>
-              <img className="skillsLogo" src="/html.png" alt="html" />
-              <img className="skillsLogo" src="/css.png" alt="" />
+              ></Image>
+              <Image className="skillsLogo" src="/html.png" alt="html" />
+              <Image className="skillsLogo" src="/css.png" alt="" />
             </div>
           </div>
         </div>

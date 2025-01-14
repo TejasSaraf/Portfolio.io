@@ -4,15 +4,6 @@ import { useState } from "react";
 import { CSSProperties } from "react";
 import Image from 'next/image';
 
-const container: CSSProperties = {
-  position: 'relative',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'flex-end',
-  gap: '1rem',
-  width: '100%'
-};
-
 const button: CSSProperties = {
   border: 'none',
   borderRadius: '4px',

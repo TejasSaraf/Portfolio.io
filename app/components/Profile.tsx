@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -19,7 +20,7 @@ function Profile() {
           className="aboutContainer block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
         >
           <div className="avatar bg-primary/25 rounded-full ring-2 ring-offset-4 ring-offset-background ring-[var(--sk-body-link-color,#06c)]">
-            <img
+            <Image
               className="profilePicture rounded-full"
               src="/Avatar.jpeg"
               alt="Tejas Saraf Avatar"
