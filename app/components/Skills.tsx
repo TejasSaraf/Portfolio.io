@@ -69,7 +69,7 @@ function Skills() {
             {activeSection === "current" && (
               <>
                 {[
-                  "Angular",
+                  "angular",
                   "react",
                   "next",
                   "Node",
@@ -90,9 +90,9 @@ function Skills() {
                   "Javascript",
                   "Typescript",
                   "CSS",
-                  "C++",
+                  "c++",
                   "Spring",
-                  "C",
+                  "c",
                 ].map((skill) => (
                   <motion.div
                     key={skill}
@@ -108,7 +108,11 @@ function Skills() {
                         height={150}
                       />
                     </div>
-                    <span className="skillsList">{skill}</span>
+                    <span className="skillsList">
+                      {skill.charAt(0).toUpperCase() + skill.slice(1)}
+                      {skill === "react" && "Js"}
+                      {skill === "next" && "Js"}
+                    </span>
                   </motion.div>
                 ))}
               </>
@@ -194,7 +198,7 @@ function Skills() {
             {/* Backend Section */}
             {activeSection === "backend" && (
               <>
-                {["Mysql", "mongodb", "express", "node", "Firebase"].map(
+                {["mysql", "mongodb", "express", "node", "Firebase"].map(
                   (skill) => (
                     <motion.div
                       key={skill}
@@ -233,7 +237,7 @@ function Skills() {
                   "github",
                   "kubernetes",
                   "docker",
-                  "postman",
+                  "Postman",
                   "NPM",
                   "JSON",
                   "GitHubActions",
