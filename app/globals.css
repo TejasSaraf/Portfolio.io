@@ -52,6 +52,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  gap: 25rem;
 }
 
 .bg-gray-800 {
@@ -63,9 +64,10 @@ body {
   width: 25px;
 }
 
-.container {
+.content {
   display: flex;
-  gap: 25rem;
+  flex-direction: column;
+  gap: 5px;
 }
 
 /* profile section*/
@@ -289,7 +291,7 @@ h3 {
   font-weight: 300;
 }
 
-.skillsTitle svg{
+.skillsTitle svg {
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -529,7 +531,7 @@ h3 {
     width: 100%;
   }
 
-  .profilePicture{
+  .profilePicture {
     width: 12rem;
     height: 12rem;
   }
