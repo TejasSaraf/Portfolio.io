@@ -43,7 +43,7 @@ function Profile() {
               Software Developer | Ex - Jio Platforms
             </span>
             <span className="location block">
-              Chicago, IL, United States | Contact Info
+              Chicago, IL, United States
             </span>
           </div>
           <motion.button

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
+import Image from "next/image";
 
 function About() {
   const [activeSection, setActiveSection] = useState("everyone");
@@ -116,7 +117,10 @@ function About() {
               >
                 <div className="everyone">
                   <motion.span layout>
-                    Software Developer with experience in building scalable web applications and serverless architectures using Angular, React, NextJs, AWS, GCP, MySQL and various backend frameworks.
+                    Software Developer with experience in building scalable web
+                    applications and serverless architectures using Angular,
+                    React, NextJs, AWS, GCP, MySQL and various backend
+                    frameworks.
                   </motion.span>
                   <motion.li layout>
                     1 years of experience in Software Development.
@@ -125,8 +129,49 @@ function About() {
                     Masters in Information Technology and Management
                   </motion.li>
                   <motion.li layout>
-                    Open Source Software Developer Enthusiast 
+                    Open Source Software Developer Enthusiast
                   </motion.li>
+                  <div className="recruiterResource">
+                    <a
+                      href="https://drive.google.com/file/d/1GI2LMJTKWPw-Sku4NGn0wkcwxTbq4o-9/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        alt=""
+                        src="/resume.png"
+                        width={100}
+                        height={100}
+                      ></Image>
+                    </a>
+
+                    <a href="https://github.com/TejasSaraf">
+                      <Image
+                        alt=""
+                        src="/Github.svg"
+                        width={100}
+                        height={100}
+                      ></Image>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/saraf-tejas">
+                      <Image
+                        alt=""
+                        src="/Linkedin.svg"
+                        width={100}
+                        height={100}
+                      ></Image>
+                    </a>
+
+                    <a href="https://leetcode.com/u/TejasSaraf/">
+                      <Image
+                        alt=""
+                        src="/leetcode.svg"
+                        width={100}
+                        height={100}
+                      ></Image>
+                    </a>
+                  </div>
                 </div>
               </motion.div>
             )}

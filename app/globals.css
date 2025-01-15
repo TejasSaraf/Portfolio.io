@@ -200,8 +200,15 @@ body {
 
 .contact {
   display: flex;
-  width: 8rem;
-  gap: 10px;
+  width: 12rem;
+  gap: 20px;
+  padding: 10px;
+}
+
+.recruiterResource{
+  display: flex;
+  width: 9rem;
+  gap: 15px;
   padding: 10px;
 }
 
