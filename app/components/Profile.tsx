@@ -32,7 +32,7 @@ function Profile() {
             <div className="name">
               <p className="title text text-lg">Tejas Saraf</p>
               <svg
-                className="verified w-5 h-5 "
+                className="verified w-5 h-5 icon"
                 viewBox="0 0 22 22"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -42,9 +42,7 @@ function Profile() {
             <span className="designation block">
               Software Developer | Ex - Jio Platforms
             </span>
-            <span className="location block">
-              Chicago, IL, United States
-            </span>
+            <span className="location block">Chicago, IL, United States</span>
           </div>
           <motion.button
             className="openForWorkButton button flex items-center gap-2 border border-primary px-2 py-1 rounded-2xl font-thin hover:underline"

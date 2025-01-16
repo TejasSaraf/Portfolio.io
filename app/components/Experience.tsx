@@ -7,7 +7,6 @@ import Image from "next/image";
 const button: CSSProperties = {
   border: "none",
   borderRadius: "4px",
-  color: "black",
   cursor: "pointer",
   marginBottom: "1rem",
 };

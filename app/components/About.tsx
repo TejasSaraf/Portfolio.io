@@ -138,6 +138,7 @@ function About() {
                       rel="noopener noreferrer"
                     >
                       <Image
+                        className="icon"
                         alt=""
                         src="/resume.png"
                         width={100}
@@ -147,6 +148,7 @@ function About() {
 
                     <a href="https://github.com/TejasSaraf">
                       <Image
+                        className="icon"
                         alt=""
                         src="/Github.svg"
                         width={100}

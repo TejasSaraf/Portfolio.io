@@ -205,7 +205,7 @@ body {
   padding: 10px;
 }
 
-.recruiterResource{
+.recruiterResource {
   display: flex;
   width: 9rem;
   gap: 15px;
@@ -419,6 +419,19 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.icon {
+  fill: var(--icon-color); /* For SVG icons */
+  color: var(--icon-color); /* For font icons */
+}
+
+body.dark img.icon {
+  filter: invert(1);
+}
+
+body.dark {
+  --icon-color: white;
 }
 
 .openForWorkButton {

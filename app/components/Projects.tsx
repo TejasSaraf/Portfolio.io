@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useDarkMode } from "../contexts/DarkModeContext";
 
 function Projects() {
+  const { isDarkMode } = useDarkMode();
   return (
     <div id="projects" className="projects">
       <div className="projectsTitle">
@@ -29,7 +31,7 @@ function Projects() {
             <div className="link">
               <a href="https://github.com/TejasSaraf/Illinois-Tech-Campus-Map">
                 <Image
-                  className="skillsLogo"
+                  className="skillsLogo icon"
                   src="/github.png"
                   alt=""
                   width={150} // Adjust the width as needed
@@ -38,7 +40,7 @@ function Projects() {
               </a>
               <a href="https://illinoistechmap.netlify.app/">
                 <Image
-                  className="skillsLogo"
+                  className="skillsLogo icon"
                   src="/globe.png"
                   alt=""
                   width={150} // Adjust the width as needed
@@ -141,7 +143,7 @@ function Projects() {
             <div className="link">
               <a href="https://github.com/TejasSaraf/Movie-Booking-System">
                 <Image
-                  className="skillsLogo"
+                  className="skillsLogo icon"
                   src="/github.png"
                   alt=""
                   width={150} // Adjust the width as needed
@@ -212,7 +214,7 @@ function Projects() {
             <div className="link">
               <a href="https://github.com/TejasSaraf/Blockchain-E-Commerce">
                 <Image
-                  className="skillsLogo"
+                  className="skillsLogo icon"
                   src="/github.png"
                   alt=""
                   width={150} // Adjust the width as needed
@@ -296,7 +298,12 @@ function Projects() {
                 </svg>
               </motion.div>
               <motion.div className="competencies">
-                <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="icon"
+                  viewBox="0 0 128 128"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill={isDarkMode ? "white" : "black"}
+                >
                   <path
                     d="M84.466 0L63.887 36.578H22.756L43.321 0z"
                     opacity=".45"
@@ -344,7 +351,7 @@ function Projects() {
             <div className="link">
               <a href="https://github.com/TejasSaraf/Social-Media-Handler">
                 <Image
-                  className="skillsLogo"
+                  className="skillsLogo icon"
                   src="/github.png"
                   alt=""
                   width={150} // Adjust the width as needed
@@ -427,7 +434,6 @@ function Projects() {
                   />
                 </svg>
               </motion.div>
-              
             </div>
           </div>
         </div>

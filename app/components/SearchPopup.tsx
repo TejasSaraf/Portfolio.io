@@ -9,6 +9,7 @@ import {
   Info,
   Search,
   User,
+  Microscope,
   X,
 } from "lucide-react";
 import Link from "next/link";
@@ -20,6 +21,7 @@ const components = [
   "Skills",
   "Projects",
   "Education",
+  "Patent",
 ];
 
 interface SearchPopupProps {
@@ -148,6 +150,9 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
                     break;
                   case "education":
                     Icon = GraduationCap;
+                    break;
+                  case "patent":
+                    Icon = Microscope;
                     break;
                   default:
                     Icon = Search;

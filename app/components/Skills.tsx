@@ -58,13 +58,16 @@ function Skills() {
   return (
     <div id="skills" className="skills">
       <div className="skillsTitle">
-          <svg className="skillIcon w-6 h-6" fill="currentColor" viewBox="0 -960 960 960">
-            <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"></path>
-          </svg>
-          <span className="h1">Skills</span>
-        </div>
+        <svg
+          className="skillIcon w-6 h-6"
+          fill="currentColor"
+          viewBox="0 -960 960 960"
+        >
+          <path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"></path>
+        </svg>
+        <span className="h1">Skills</span>
+      </div>
       <section className="skillsSection">
-
         <div className="categories">
           {["current", "languages", "frontend", "backend", "tools"].map(
             (section) => (
@@ -92,7 +95,7 @@ function Skills() {
             {/* Current Section */}
             {activeSection === "current" && (
               <>
-                <motion.div 
+                <motion.div
                   className="competencies"
                   variants={skillItemVariants}
                   initial="initial"
@@ -108,7 +111,7 @@ function Skills() {
                   />
                   <span className="skillsList">AngularJs</span>
                 </motion.div>
-                <motion.div 
+                <motion.div
                   className="competencies"
                   variants={skillItemVariants}
                   initial="initial"
@@ -123,23 +126,29 @@ function Skills() {
                   </svg>
                   <span className="skillsList">ReactJs</span>
                 </motion.div>
-                <motion.div 
+                <motion.div
                   className="competencies"
                   variants={skillItemVariants}
                   initial="initial"
                   whileHover="hover"
                   whileTap="tap"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                  <svg
+                    className="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                  >
                     <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z" />
                   </svg>
                   <span className="skillsList">NextJs</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#83CD29"
@@ -148,21 +157,29 @@ function Skills() {
                   </svg>
                   <span className="skillsList">NodeJs</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
+                  <svg
+                    className="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                  >
                     <path d="M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7l26.92-36.13L67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21 6.45-8.55 12.8-16.67 18.8-25.11 2.41-3.42 5-4.72 9.33-3.46-3.28 4.35-6.49 8.63-9.72 12.88-4.36 5.73-8.64 11.53-13.16 17.14-1.61 2-1.35 3.3.09 5.19C109.9 76 118.16 87.1 126.67 98.44zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89C5.26 85.89 3 78.92 2 71.39c-.15-1.2-.46-2.38-.7-3.57q.03-3.04.03-6.08zm5.87-1.49h50.43c-.33-16.06-10.33-27.47-24-27.57-15-.12-25.78 11.02-26.43 27.57z" />
                   </svg>
                   <span className="skillsList">ExpressJs</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#764abc"
@@ -171,11 +188,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Redux</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <Image
                     id="imageLogo"
                     src="/rxjs.svg"
@@ -185,11 +204,13 @@ function Skills() {
                   />
                   <span className="skillsList">RXJS</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       d="M116.452 6.643a59.104 59.104 0 01-6.837 12.136A64.249 64.249 0 0064.205-.026C28.984-.026 0 28.982 0 64.242a64.316 64.316 0 0019.945 46.562l2.368 2.1a64.22 64.22 0 0041.358 15.122c33.487 0 61.637-26.24 64.021-59.683 1.751-16.371-3.051-37.077-11.24-61.7zM29.067 111.17a5.5 5.5 0 01-4.269 2.034c-3.018 0-5.487-2.484-5.487-5.502 0-3.017 2.485-5.501 5.487-5.501 1.25 0 2.485.433 3.452 1.234 2.351 1.9 2.718 5.384.817 7.735zm87.119-19.238c-15.843 21.122-49.68 14.003-71.376 15.02 0 0-3.852.234-7.721.867 0 0 1.45-.617 3.335-1.334 15.226-5.301 22.43-6.335 31.685-11.086 17.427-8.869 34.654-28.274 38.24-48.463-6.637 19.422-26.75 36.11-45.077 42.895-12.557 4.635-35.238 9.136-35.238 9.136l-.917-.484c-15.442-7.518-15.91-40.977 12.157-51.78 12.291-4.735 24.048-2.134 37.323-5.302 14.175-3.367 30.568-14.004 37.238-27.874 7.471 22.19 16.46 56.932.35 78.405z"
@@ -198,11 +219,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Spring</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#0868AC"
@@ -211,11 +234,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">JQuery</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#0074BD"
@@ -240,11 +265,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Java</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <linearGradient
                       id="python-original-a"
@@ -299,11 +326,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Python</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill="#00599c"
@@ -324,11 +353,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">C++</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#659AD3"
@@ -345,11 +376,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">C</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#F0DB4F"
@@ -362,11 +395,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">JavaScript</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z" />
                     <path
@@ -377,11 +412,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">TypeScript</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#E44D26"
@@ -402,11 +439,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">HTML</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#1572B6"
@@ -435,11 +474,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">CSS</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fillRule="evenodd"
@@ -450,11 +491,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">SCSS</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#00618A"
@@ -463,11 +506,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">MySQL</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill="#252f3e"
@@ -480,11 +525,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Amazon Web Services</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill="#f37036"
@@ -501,11 +548,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Postman</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#ea4535"
@@ -527,11 +576,13 @@ function Skills() {
                   <span className="skillsList">Google Cloud Platform</span>
                 </motion.div>
 
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#F34F29"
@@ -540,13 +591,19 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Git</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                    <g fill="#181616">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
+                  <svg
+                    className="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                  >
+                    <g>
                       <path
                         fillRule="evenodd"
                         clipRule="evenodd"
@@ -557,11 +614,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">GitHub</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fillRule="evenodd"
@@ -650,11 +709,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Docker</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <g fill="#486bb3">
                       <path d="M56.484 55.098c.37.27.82.43 1.31.43 1.2 0 2.18-.95 2.23-2.13l.05-.03.75-13.26c-.9.11-1.8.26-2.7.46-4.93 1.12-9.2 3.55-12.54 6.83l10.87 7.71.03-.01zM55.034 74.528a2.218 2.218 0 00-2.58-1.69l-.02-.03-13.05 2.21a26.15 26.15 0 0010.51 13.15l5.06-12.22-.04-.05c.17-.42.23-.89.12-1.37zM50.694 65.118c.44-.12.85-.38 1.16-.76.75-.94.62-2.29-.28-3.07l.01-.05-9.93-8.88a26.07 26.07 0 00-3.7 16.48l12.73-3.67.01-.05zM60.334 69.018l3.66 1.76 3.66-1.75.9-3.95-2.53-3.16h-4.06l-2.54 3.16zM67.934 53.348c.02.46.18.91.49 1.29.75.94 2.1 1.11 3.06.41l.04.02 10.8-7.66c-4.08-3.99-9.4-6.6-15.15-7.3l.75 13.24h.01zM75.514 72.778c-.17-.03-.34-.05-.51-.04-.29.01-.58.09-.85.22a2.23 2.23 0 00-1.08 2.89l-.02.02 5.11 12.34c4.93-3.14 8.61-7.83 10.54-13.24l-13.16-2.23-.03.04zM65.954 79.318a2.246 2.246 0 00-2.04-1.17c-.77.03-1.5.46-1.89 1.18h-.01l-6.42 11.6a26.16 26.16 0 0014.27.73c.88-.2 1.74-.44 2.57-.72l-6.43-11.63h-.05z" />
@@ -664,11 +725,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Kubernetes</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#f58220"
@@ -677,11 +740,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Firebase</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       d="M27.255 80.719c0 7.33-5.978 13.317-13.309 13.317C6.616 94.036.63 88.049.63 80.719s5.987-13.317 13.317-13.317h13.309zm6.709 0c0-7.33 5.987-13.317 13.317-13.317s13.317 5.986 13.317 13.317v33.335c0 7.33-5.986 13.317-13.317 13.317-7.33 0-13.317-5.987-13.317-13.317zm0 0"
@@ -702,11 +767,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Slack</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
@@ -715,11 +782,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Tailwind</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <defs>
                       <linearGradient
@@ -793,11 +862,13 @@ function Skills() {
             {/* Languages Section */}
             {activeSection === "languages" && (
               <>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#0074BD"
@@ -822,11 +893,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Java</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <linearGradient
                       id="python-original-a"
@@ -881,11 +954,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Python</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill="#00599c"
@@ -906,11 +981,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">C++</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#659AD3"
@@ -927,11 +1004,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">C</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#F0DB4F"
@@ -944,11 +1023,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">JavaScript</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z" />
                     <path
@@ -959,11 +1040,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">TypeScript</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#E44D26"
@@ -984,11 +1067,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">HTML</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#1572B6"
@@ -1017,11 +1102,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">CSS</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fillRule="evenodd"
@@ -1032,11 +1119,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">SCSS</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#00618A"
@@ -1051,11 +1140,13 @@ function Skills() {
             {/* Frontend Section */}
             {activeSection === "frontend" && (
               <>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#B3B3B3"
@@ -1080,11 +1171,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">AngularJs</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <g fill="#61DAFB">
                       <circle cx="64" cy="64" r="11.4" />
@@ -1093,21 +1186,29 @@ function Skills() {
                   </svg>
                   <span className="skillsList">ReactJs</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
+                  <svg
+                    className="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                  >
                     <path d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z" />
                   </svg>
                   <span className="skillsList">NextJs</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#764abc"
@@ -1116,11 +1217,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Redux</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <Image
                     id="imageLogo"
                     src="/rxjs.svg"
@@ -1139,11 +1242,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">JQuery</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#E44D26"
@@ -1164,11 +1269,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">HTML</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#1572B6"
@@ -1197,11 +1304,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">CSS</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fillRule="evenodd"
@@ -1212,11 +1321,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">SCSS</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
@@ -1225,11 +1336,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Tailwind</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <defs>
                       <linearGradient
@@ -1303,11 +1416,13 @@ function Skills() {
             {/* Backend Section */}
             {activeSection === "backend" && (
               <>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       d="M116.452 6.643a59.104 59.104 0 01-6.837 12.136A64.249 64.249 0 0064.205-.026C28.984-.026 0 28.982 0 64.242a64.316 64.316 0 0019.945 46.562l2.368 2.1a64.22 64.22 0 0041.358 15.122c33.487 0 61.637-26.24 64.021-59.683 1.751-16.371-3.051-37.077-11.24-61.7zM29.067 111.17a5.5 5.5 0 01-4.269 2.034c-3.018 0-5.487-2.484-5.487-5.502 0-3.017 2.485-5.501 5.487-5.501 1.25 0 2.485.433 3.452 1.234 2.351 1.9 2.718 5.384.817 7.735zm87.119-19.238c-15.843 21.122-49.68 14.003-71.376 15.02 0 0-3.852.234-7.721.867 0 0 1.45-.617 3.335-1.334 15.226-5.301 22.43-6.335 31.685-11.086 17.427-8.869 34.654-28.274 38.24-48.463-6.637 19.422-26.75 36.11-45.077 42.895-12.557 4.635-35.238 9.136-35.238 9.136l-.917-.484c-15.442-7.518-15.91-40.977 12.157-51.78 12.291-4.735 24.048-2.134 37.323-5.302 14.175-3.367 30.568-14.004 37.238-27.874 7.471 22.19 16.46 56.932.35 78.405z"
@@ -1316,11 +1431,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Spring</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#0868AC"
@@ -1329,11 +1446,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">JQuery</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#00618A"
@@ -1342,11 +1461,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">MySQL</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#83CD29"
@@ -1355,12 +1476,18 @@ function Skills() {
                   </svg>
                   <span className="skillsList">NodeJs</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
+                  <svg
+                    className="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                  >
                     <path d="M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7l26.92-36.13L67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21 6.45-8.55 12.8-16.67 18.8-25.11 2.41-3.42 5-4.72 9.33-3.46-3.28 4.35-6.49 8.63-9.72 12.88-4.36 5.73-8.64 11.53-13.16 17.14-1.61 2-1.35 3.3.09 5.19C109.9 76 118.16 87.1 126.67 98.44zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.21 15.15 35.62 35.53 28.78 7.15-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.06 6.14-3.06-1.69 8.76-5.52 16.08-13.52 20.66-12 6.86-29.13 4.64-38.14-4.89C5.26 85.89 3 78.92 2 71.39c-.15-1.2-.46-2.38-.7-3.57q.03-3.04.03-6.08zm5.87-1.49h50.43c-.33-16.06-10.33-27.47-24-27.57-15-.12-25.78 11.02-26.43 27.57z" />
                   </svg>
                   <span className="skillsList">ExpressJs</span>
@@ -1371,11 +1498,13 @@ function Skills() {
             {/* tools Section */}
             {activeSection === "tools" && (
               <>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill="#252f3e"
@@ -1388,11 +1517,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Amazon Web Services</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#ea4535"
@@ -1413,11 +1544,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Google Cloud Platform</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                     <path
                       fill="#f37036"
@@ -1435,11 +1568,13 @@ function Skills() {
                   <span className="skillsList">Postman</span>
                 </motion.div>
 
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#F34F29"
@@ -1448,13 +1583,19 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Git</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                    <g fill="#181616">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 128"
+                    className="icon"
+                  >
+                    <g>
                       <path
                         fillRule="evenodd"
                         clipRule="evenodd"
@@ -1465,11 +1606,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">GitHub</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fillRule="evenodd"
@@ -1558,11 +1701,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Docker</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <g fill="#486bb3">
                       <path d="M56.484 55.098c.37.27.82.43 1.31.43 1.2 0 2.18-.95 2.23-2.13l.05-.03.75-13.26c-.9.11-1.8.26-2.7.46-4.93 1.12-9.2 3.55-12.54 6.83l10.87 7.71.03-.01zM55.034 74.528a2.218 2.218 0 00-2.58-1.69l-.02-.03-13.05 2.21a26.15 26.15 0 0010.51 13.15l5.06-12.22-.04-.05c.17-.42.23-.89.12-1.37zM50.694 65.118c.44-.12.85-.38 1.16-.76.75-.94.62-2.29-.28-3.07l.01-.05-9.93-8.88a26.07 26.07 0 00-3.7 16.48l12.73-3.67.01-.05zM60.334 69.018l3.66 1.76 3.66-1.75.9-3.95-2.53-3.16h-4.06l-2.54 3.16zM67.934 53.348c.02.46.18.91.49 1.29.75.94 2.1 1.11 3.06.41l.04.02 10.8-7.66c-4.08-3.99-9.4-6.6-15.15-7.3l.75 13.24h.01zM75.514 72.778c-.17-.03-.34-.05-.51-.04-.29.01-.58.09-.85.22a2.23 2.23 0 00-1.08 2.89l-.02.02 5.11 12.34c4.93-3.14 8.61-7.83 10.54-13.24l-13.16-2.23-.03.04zM65.954 79.318a2.246 2.246 0 00-2.04-1.17c-.77.03-1.5.46-1.89 1.18h-.01l-6.42 11.6a26.16 26.16 0 0014.27.73c.88-.2 1.74-.44 2.57-.72l-6.43-11.63h-.05z" />
@@ -1572,11 +1717,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Kubernetes</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#f58220"
@@ -1585,11 +1732,13 @@ function Skills() {
                   </svg>
                   <span className="skillsList">Firebase</span>
                 </motion.div>
-                <motion.div className="competencies"
-                variants={skillItemVariants}
-                initial="initial"
-                whileHover="hover"
-                whileTap="tap">
+                <motion.div
+                  className="competencies"
+                  variants={skillItemVariants}
+                  initial="initial"
+                  whileHover="hover"
+                  whileTap="tap"
+                >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       d="M27.255 80.719c0 7.33-5.978 13.317-13.309 13.317C6.616 94.036.63 88.049.63 80.719s5.987-13.317 13.317-13.317h13.309zm6.709 0c0-7.33 5.987-13.317 13.317-13.317s13.317 5.986 13.317 13.317v33.335c0 7.33-5.986 13.317-13.317 13.317-7.33 0-13.317-5.987-13.317-13.317zm0 0"

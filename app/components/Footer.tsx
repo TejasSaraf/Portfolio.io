@@ -14,7 +14,13 @@ function Footer() {
         </a>
 
         <a href="https://github.com/TejasSaraf">
-          <Image alt="" src="/Github.svg" width={100} height={100}></Image>
+          <Image
+            className="icon"
+            alt=""
+            src="/Github.svg"
+            width={100}
+            height={100}
+          ></Image>
         </a>
 
         <a href="https://www.linkedin.com/in/saraf-tejas">
