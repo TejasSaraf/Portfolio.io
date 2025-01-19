@@ -46,7 +46,7 @@ function Footer() {
         <Link href="/">Software Developer</Link>
       </div>
 
-      <div className="text-sm text-gray-500 dark:text-gray-400">
+      <div className="footerContents text-sm text-gray-500 dark:text-gray-400">
         <p>
           <a
             target="_blank"
