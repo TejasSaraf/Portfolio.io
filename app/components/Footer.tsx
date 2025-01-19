@@ -7,15 +7,15 @@ function Footer() {
   return (
     <footer className="footerSection">
       <div className="contact">
-        <Link
+        <a
           href="mailto:saraftejas12@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image alt="Gmail" src="/Gmail.png" width={100} height={100} />
-        </Link>
+        </a>
 
-        <Link href="https://github.com/TejasSaraf" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/TejasSaraf" target="_blank" rel="noopener noreferrer">
           <Image
             className="icon"
             alt="GitHub"
@@ -23,19 +23,19 @@ function Footer() {
             width={100}
             height={100}
           />
-        </Link>
+        </a>
 
-        <Link href="https://www.linkedin.com/in/saraf-tejas" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/saraf-tejas" target="_blank" rel="noopener noreferrer">
           <Image alt="LinkedIn" src="/Linkedin.svg" width={100} height={100} />
-        </Link>
+        </a>
 
-        <Link href="https://x.com/TejasRajendraS1" target="_blank" rel="noopener noreferrer">
+        <a href="https://x.com/TejasRajendraS1" target="_blank" rel="noopener noreferrer">
           <Image alt="Twitter" src="/Twitter.svg" width={100} height={100} />
-        </Link>
+        </a>
 
-        <Link href="https://leetcode.com/u/TejasSaraf/" target="_blank" rel="noopener noreferrer">
+        <a href="https://leetcode.com/u/TejasSaraf/" target="_blank" rel="noopener noreferrer">
           <Image alt="LeetCode" src="/leetcode.svg" width={100} height={100} />
-        </Link>
+        </a>
       </div>
 
       <div className="flex mb-2 gap-1 text-sm text-gray-500 dark:text-gray-400">
@@ -48,13 +48,13 @@ function Footer() {
 
       <div className="text-sm text-gray-500 dark:text-gray-400">
         <p>
-          <Link
+          <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/timlrx/tailwind-nextjs-starter-blog"
           >
             Built with Tailwind Nextjs Theme
-          </Link>
+          </a>
         </p>
       </div>
     </footer>
