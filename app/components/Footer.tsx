@@ -1,39 +1,41 @@
-"use client";
-import Image from "next/image";
+'use client'
+
+import Image from "next/image"
+import Link from "next/link"
 
 function Footer() {
   return (
-    <div className="footerSection">
+    <footer className="footerSection">
       <div className="contact">
-        <a
+        <Link
           href="mailto:saraftejas12@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image alt="" src="/Gmail.png" width={100} height={100}></Image>
-        </a>
+          <Image alt="Gmail" src="/Gmail.png" width={100} height={100} />
+        </Link>
 
-        <a href="https://github.com/TejasSaraf">
+        <Link href="https://github.com/TejasSaraf" target="_blank" rel="noopener noreferrer">
           <Image
             className="icon"
-            alt=""
+            alt="GitHub"
             src="/Github.svg"
             width={100}
             height={100}
-          ></Image>
-        </a>
+          />
+        </Link>
 
-        <a href="https://www.linkedin.com/in/saraf-tejas">
-          <Image alt="" src="/Linkedin.svg" width={100} height={100}></Image>
-        </a>
+        <Link href="https://www.linkedin.com/in/saraf-tejas" target="_blank" rel="noopener noreferrer">
+          <Image alt="LinkedIn" src="/Linkedin.svg" width={100} height={100} />
+        </Link>
 
-        <a href="https://x.com/TejasRajendraS1">
-          <Image alt="" src="/Twitter.svg" width={100} height={100}></Image>
-        </a>
+        <Link href="https://x.com/TejasRajendraS1" target="_blank" rel="noopener noreferrer">
+          <Image alt="Twitter" src="/Twitter.svg" width={100} height={100} />
+        </Link>
 
-        <a href="https://leetcode.com/u/TejasSaraf/">
-          <Image alt="" src="/leetcode.svg" width={100} height={100}></Image>
-        </a>
+        <Link href="https://leetcode.com/u/TejasSaraf/" target="_blank" rel="noopener noreferrer">
+          <Image alt="LeetCode" src="/leetcode.svg" width={100} height={100} />
+        </Link>
       </div>
 
       <div className="flex mb-2 gap-1 text-sm text-gray-500 dark:text-gray-400">
@@ -41,23 +43,23 @@ function Footer() {
         <div> • </div>
         <div>© 2025</div>
         <div> • </div>
-        <a href="/">Software Developer</a>
+        <Link href="/">Software Developer</Link>
       </div>
 
       <div className="text-sm text-gray-500 dark:text-gray-400">
         <p>
-          <a
+          <Link
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/timlrx/tailwind-nextjs-starter-blog"
           >
             Built with Tailwind Nextjs Theme
-          </a>
+          </Link>
         </p>
-        <p></p>
       </div>
-    </div>
-  );
+    </footer>
+  )
 }
 
-export default Footer;
+export default Footer
+
