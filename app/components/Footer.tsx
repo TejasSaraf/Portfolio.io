@@ -38,7 +38,7 @@ function Footer() {
         </a>
       </div>
 
-      <div className="flex mb-2 gap-1 text-sm text-gray-500 dark:text-gray-400">
+      <div className="footerContents flex mb-2 gap-1 text-sm text-gray-500 dark:text-gray-400">
         <div>Tejas Saraf</div>
         <div> • </div>
         <div>© 2025</div>

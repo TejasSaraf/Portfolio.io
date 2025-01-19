@@ -684,4 +684,8 @@ body.dark {
     width: 25px;
     height: auto;
   }
+
+  .footerContents{
+    font-size: .675rem;
+  }
 }
