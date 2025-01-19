@@ -556,6 +556,14 @@ body.dark {
   gap: 20px;
 }
 
+.openToWork{
+  display: flex;
+    border: 1px solid rgb(34 197 94 / var(--tw-bg-opacity, 1));
+    align-items: center;
+    justify-content: center;
+    color: rgb(34 197 94 / var(--tw-bg-opacity, 1));
+}
+
 @media (min-width: 375px) and (max-width: 500px) {
   .projectsSection {
     display: flex;

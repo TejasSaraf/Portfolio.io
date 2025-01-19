@@ -110,11 +110,6 @@ function Experience() {
                   library, improving host background visibility by 99.9%.
                 </motion.li>
                 <motion.li variants={itemVariants}>
-                  Streamlined OTP verification with unifying email/phone fields,
-                  dynamically updating API payloads for a seamless user
-                  experience for over 10,000+ customers.
-                </motion.li>
-                <motion.li variants={itemVariants}>
                   Contributed to front-end feature development, CI/CD pipeline
                   setup, and application deployment on GCP (Google Cloud
                   Platform), achieving 80% live event success rates.

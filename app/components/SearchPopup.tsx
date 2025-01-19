@@ -1,17 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import {
-  Briefcase,
-  Code,
-  FolderGit2,
-  GraduationCap,
-  Info,
-  Search,
-  User,
-  Microscope,
-  X,
-} from "lucide-react";
+import { Briefcase, Code, FolderGit2, GraduationCap, Info, Search, User, Microscope, X } from 'lucide-react';
 import Link from "next/link";
 
 const components = [
@@ -21,7 +11,7 @@ const components = [
   "Skills",
   "Projects",
   "Education",
-  "Patent",
+  "Patent"
 ];
 
 interface SearchPopupProps {
@@ -102,12 +92,12 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
         </div>
         <div
           ref={searchRef}
-          className="searchBox inline-block w-full max-w-2xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl"
+          className="searchBox inline-block w-full max-w-2xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white dark:bg-gray-800 shadow-xl"
         >
           <div className="searchBar relative">
             <input
               type="search"
-              className="w-full pl-10 pr-3 py-2 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:border-[var(--sk-body-link-color,#06c)] focus:ring-[var(--sk-body-link-color,#06c)] sm:text-sm"
+              className="w-full pl-10 pr-3 py-2 rounded-md leading-5 bg-white dark:bg-gray-700 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-1 focus:border-[var(--sk-body-link-color,#06c)] focus:ring-[var(--sk-body-link-color,#06c)] sm:text-sm"
               placeholder="Search components..."
               aria-label="Search components"
               onChange={handleSearchChange}
@@ -128,7 +118,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
             </button>
           </div>
           <div className="mt-4">
-            <ul className="max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
+            <ul className="max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm dark:bg-gray-800 dark:text-gray-300">
               <span className="Sections">Sections</span>
               {filteredComponents.map((component) => {
                 let Icon;
@@ -161,7 +151,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
                 return (
                   <li
                     key={component}
-                    className="text-gray-900 cursor-default select-none relative py-2 pl-3 pr-9 hover:bg-gray-100"
+                    className="text-gray-900 dark:text-gray-300 cursor-default select-none relative py-2 pl-3 pr-9"
                   >
                     <a
                       href={`#${component.toLowerCase()}`}
@@ -169,7 +159,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
                         e.preventDefault();
                         handleComponentClick(component);
                       }}
-                      className="block p-2 hover:bg-gray-100 rounded transition duration-200 flex items-center"
+                      className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
                     >
                       <Icon className="mr-2 h-5 w-5" />
                       {component}
@@ -180,7 +170,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
 
               <span className="Sections py-1">Links</span>
               <div
-                className="overflow-hidden p-1 text-foreground [&amp;_[cmdk-group-heading]]:px-2 [&amp;_[cmdk-group-heading]]:py-1.5 [&amp;_[cmdk-group-heading]]:text-xs [&amp;_[cmdk-group-heading]]:font-medium [&amp;_[cmdk-group-heading]]:text-primary"
+                className="overflow-hidden p-1 text-foreground dark:text-gray-300 [&amp;_[cmdk-group-heading]]:px-2 [&amp;_[cmdk-group-heading]]:py-1.5 [&amp;_[cmdk-group-heading]]:text-xs [&amp;_[cmdk-group-heading]]:font-medium [&amp;_[cmdk-group-heading]]:text-primary dark:[&amp;_[cmdk-group-heading]]:text-gray-400"
                 cmdk-group=""
                 role="presentation"
                 data-value="Links"
@@ -194,7 +184,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
                   <Link
                     href="https://www.linkedin.com/in/saraf-tejas/"
                     target="_blank"
-                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background"
+                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     <svg
                       className="w-5 h-5"
@@ -214,7 +204,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
                   <Link
                     href="https://drive.google.com/file/d/1GI2LMJTKWPw-Sku4NGn0wkcwxTbq4o-9/view?usp=sharing"
                     target="_blank"
-                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background"
+                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     <svg
                       className="w-5 h-5"
@@ -228,7 +218,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
                   <Link
                     href="https://github.com/TejasSaraf"
                     target="_blank"
-                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background"
+                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     <svg
                       className="w-5 h-5"
@@ -238,12 +228,12 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
                     >
                       <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
                     </svg>
-                    <span className="Links">GitHub</span>
+                    <div className="Links">GitHub</div>
                   </Link>
                   <Link
                     href="https://leetcode.com/u/TejasSaraf/"
                     target="_blank"
-                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background"
+                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     <svg
                       className="h-5 w-5"
@@ -258,7 +248,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
                   <Link
                     href="https://x.com/TejasRajendraS1"
                     target="_blank"
-                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background"
+                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     <svg
                       className="w-5 h-5"
@@ -274,7 +264,7 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
                   </Link>
                   <Link
                     href="mailto:saraftejas12@gmail.com"
-                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background"
+                    className="relative flex pl-[1.25rem] cursor-pointer gap-2 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground data-[disabled=true]:pointer-events-none data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 data-[selected='true']:underline data-[selected='true']:text-primary data-[selected='true']:bg-background dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
                   >
                     <svg
                       className="h-5 w-5"
@@ -301,3 +291,4 @@ function SearchPopup({ isOpen, onClose }: SearchPopupProps) {
 }
 
 export default SearchPopup;
+
