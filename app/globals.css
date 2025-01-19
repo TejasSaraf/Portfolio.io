@@ -38,6 +38,7 @@ body {
   align-items: center;
   padding-top: 5rem; /* Add padding to account for fixed navbar */
   width: fit-content;
+  max-width: 100%;
 }
 
 .paint {
@@ -81,6 +82,7 @@ body {
   gap: 20px;
   width: 80%;
   box-shadow: 2px 4px 12px #00000014;
+  max-width: 100%;
 }
 
 .about {
@@ -92,6 +94,7 @@ body {
   width: 80%;
   font-size: 20px;
   box-shadow: 2px 4px 12px #00000014;
+  max-width: 100%;
 }
 
 .aboutTitle {
@@ -175,6 +178,7 @@ body {
   width: 80%;
   font-size: 20px;
   box-shadow: 2px 4px 12px #00000014;
+  max-width: 100%;
 }
 
 .patent {
@@ -186,6 +190,7 @@ body {
   width: 80%;
   font-size: 20px;
   box-shadow: 2px 4px 12px #00000014;
+  max-width: 100%;
 }
 
 .footerSection {
@@ -565,28 +570,38 @@ body.dark {
 }
 
 @media (min-width: 375px) and (max-width: 500px) {
+  /* Ensure the body and html take full width without overflow */
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Use a mobile-first approach with flex layout */
   .projectsSection {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    padding: 0 15px; /* Add some padding on the sides */
   }
 
   .Map {
     width: 100%;
+    max-width: 100%; /* Ensure it doesn't overflow */
   }
 
   .profilePicture {
-    width: 12rem;
-    height: 12rem;
+    width: 10rem; /* Slightly smaller for very small screens */
+    height: 10rem;
+    max-width: 100%; /* Ensure it doesn't overflow */
   }
 
   .skillsContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: flex-start; /* Align to the start instead of stretch */
     gap: 0.3rem;
-    font-size: 16px;
+    font-size: 14px; /* Slightly smaller font size */
     padding: 0;
   }
 
@@ -597,72 +612,54 @@ body.dark {
     padding: 0;
   }
 
-  .profile {
-    width: 90%;
-  }
-
-  .about {
-    width: 90%;
-  }
-
-  .skills {
-    width: 90%;
-    padding: 20px;
-  }
-
-  .experience {
-    width: 90%;
-    margin: 0;
-    padding: 15px;
-  }
-
-  .projects {
-    width: 90%;
-  }
-
+  /* Use consistent width for all sections */
+  .profile,
+  .about,
+  .skills,
+  .experience,
+  .projects,
   .patent {
     width: 90%;
+    max-width: 100%;
+    padding: 15px;
+    box-sizing: border-box; /* Include padding in width calculation */
   }
 
   .competencies {
     gap: 2px;
   }
 
-  /* .profilePicture{
-    width: 12rem;
-    height: 12rem;
-  } */
-
   .title {
-    font-size: 28px;
+    font-size: 24px; /* Slightly smaller */
   }
 
   .verified {
-    width: 17px;
-    height: 17px;
+    width: 15px;
+    height: 15px;
   }
 
   .designation,
   .location {
-    font-size: 18px;
+    font-size: 16px;
   }
 
+  /* Adjust logo sizes */
   .jioLogo,
   .eliteSoftwaresLogo,
   .gravitechDreamsLogo,
   .exposysLabsLogo {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .SPPULogo {
     width: 2.5rem;
     height: 2.5rem;
   }
 
-  .SPPULogo {
-    width: 3rem;
-    height: 3rem;
-  }
-
   .IITLogo {
-    width: 5rem;
-    height: 3rem;
+    width: 4rem;
+    height: 2.5rem;
   }
 
   h2 {
@@ -670,7 +667,7 @@ body.dark {
   }
 
   .aboutCategories {
-    padding: 10px 0 10px 0px;
+    padding: 10px 0;
   }
 
   .everyoneContent,
@@ -679,11 +676,12 @@ body.dark {
   }
 
   .skillsSection svg {
-    width: 30px;
-    height: auto; /* Maintains aspect ratio */
+    width: 25px;
+    height: auto;
   }
 
   #imageLogo {
-    width: 30px;
+    width: 25px;
+    height: auto;
   }
 }
