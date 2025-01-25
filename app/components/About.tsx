@@ -91,15 +91,15 @@ function About() {
                     Typescript, WebRTC and Google Cloud Platform.
                   </motion.span>
                   <motion.span layout>
-                    Proficient in wide range of programming languages, including
-                    Java, Python, C++, Javascript, React as well as various
-                    database frameworks and web services.
+                    Proficient in a wide range of programming languages,
+                    including Java, Python, C++, Javascript, React as well as
+                    various database frameworks and web services.
                   </motion.span>
                   <motion.span layout>
-                    Adept at contributing to the open source projects,
-                    collaborating with cross-functional teams and managing
-                    client escalations. I am poised to contribute my expertise
-                    to drive the success of cutting-edge software projects.
+                    Adept at contributing to open source projects, collaborating
+                    with cross-functional teams and managing client escalations.
+                    I am poised to contribute my expertise to drive the success
+                    of cutting-edge software projects.
                   </motion.span>
                 </div>
               </motion.div>
