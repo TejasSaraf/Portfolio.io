@@ -73,38 +73,33 @@ function About() {
               >
                 <div className="everyone">
                   <motion.span layout>
-                    As a driven Software Developer with hands-on experience
-                    across web and software development, I am passionate about
-                    crafting high-performance applications that improve user
-                    experiences. Currently pursuing a Masters in Information
-                    Technology and Management at Illinois Institute of
-                    Technology, I bring over a year of professional experience
-                    in diverse roles within established organizations like Jio
-                    Platforms Limited, where I led impactful projects improving
-                    and streamlining frontend features.
+                    Result-driven and dedicated Software Developer with 1+ years
+                    hands-on experience across diverse organizations and
+                    projects. I have a strong foundation in Full Stack
+                    Development, API optimization, cloud integrations. I have
+                    successfully engineered solutions that enhance user
+                    experience, streamlined workflows, and improved operational
+                    efficiency.
                   </motion.span>
                   <motion.span layout>
-                    I thrive in collaborative, agile environments and am
-                    constantly motivated by challenges that allow me to
-                    innovate. I am also proud to hold a patent in quantum
-                    computing, contributing to advancements in qubit-based
-                    processing for transformative industries like AI and Quantum
-                    Computing.
+                    Currently pursuing a Master's in Information Technology and
+                    Management specializing in Software Development at Illinois
+                    Institute of Technology. I was a former Software Developer
+                    at Jio Platforms Limited where I led UI revamps, optimized
+                    API integrations, and boosted live event success rate by 80%
+                    for JioEvents using cutting-edge tools like Angular,
+                    Typescript, WebRTC and Google Cloud Platform.
                   </motion.span>
                   <motion.span layout>
-                    Key skills include Java, JavaScript, Angular, React, and
-                    Typescript, along with database management and cloud
-                    technologies like AWS and Docker. I am adept at Full-stack
-                    development, Front-End development, backend services, and
-                    integrating REST APIs to drive results. I look forward to
-                    connecting with others in the industry, exploring
-                    collaboration opportunities, or discussing roles where I can
-                    make a meaningful impact.
+                    Proficient in wide range of programming languages, including
+                    Java, Python, C++, Javascript, React as well as various
+                    database frameworks and web services.
                   </motion.span>
                   <motion.span layout>
-                    Lets connect—reach out if youre looking for a tech-driven
-                    professional ready to tackle complex problems and drive
-                    innovation!
+                    Adept at contributing to the open source projects,
+                    collaborating with cross-functional teams and managing
+                    client escalations. I am poised to contribute my expertise
+                    to drive the success of cutting-edge software projects.
                   </motion.span>
                 </div>
               </motion.div>
