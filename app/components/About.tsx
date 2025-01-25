@@ -82,13 +82,13 @@ function About() {
                     efficiency.
                   </motion.span>
                   <motion.span layout>
-                    Currently pursuing a Master's in Information Technology and
-                    Management specializing in Software Development at Illinois
-                    Institute of Technology. I was a former Software Developer
-                    at Jio Platforms Limited where I led UI revamps, optimized
-                    API integrations, and boosted live event success rate by 80%
-                    for JioEvents using cutting-edge tools like Angular,
-                    Typescript, WebRTC and Google Cloud Platform.
+                    Currently pursuing a Master&apos;s in Information Technology
+                    and Management specializing in Software Development at
+                    Illinois Institute of Technology. I was a former Software
+                    Developer at Jio Platforms Limited where I led UI revamps,
+                    optimized API integrations, and boosted live event success
+                    rate by 80% for JioEvents using cutting-edge tools like
+                    Angular, Typescript, WebRTC and Google Cloud Platform.
                   </motion.span>
                   <motion.span layout>
                     Proficient in a wide range of programming languages,
