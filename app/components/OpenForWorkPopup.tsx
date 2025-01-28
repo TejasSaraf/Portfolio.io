@@ -85,7 +85,7 @@ function OpenForWorkPopup({ isOpen, onClose }: OpenForWorkPopupProps) {
           </div>
           <div className="flex justify-center mt-6">
             <Link
-              href="https://drive.google.com/file/d/1GI2LMJTKWPw-Sku4NGn0wkcwxTbq4o-9/view?usp=sharing"
+              href="https://drive.google.com/file/d/1opu84VFdcNT_jh2fLkEp7tEHGV1tTL3b/view?usp=sharing"
               target="_blank"
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-offset-gray-800"
             >

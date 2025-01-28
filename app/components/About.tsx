@@ -128,7 +128,7 @@ function About() {
                   </motion.li>
                   <div className="recruiterResource">
                     <a
-                      href="https://drive.google.com/file/d/1GI2LMJTKWPw-Sku4NGn0wkcwxTbq4o-9/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1opu84VFdcNT_jh2fLkEp7tEHGV1tTL3b/view?usp=sharing"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
